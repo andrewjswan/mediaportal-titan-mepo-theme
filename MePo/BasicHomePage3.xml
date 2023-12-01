@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+  
+  
+  	  <!-- NAVIGATION CONTROLS FOR TILES IN BASICHOME -->
+	  
+	  <control>
+        <description>left</description>
+        <type>image</type>
+        <id>666005</id>
+        <posX>0</posX>
+        <posY>0</posY>
+        <width>5</width>
+        <height>5</height>
+        <texture></texture>
+        <!--colordiffuse>ffffffff</colordiffuse-->
+		<visible>control.hasfocus(00509)|[string.equals(#skin.pages,three)+control.hasfocus(00524)]|[string.equals(#skin.pages,two)+control.hasfocus(00519)]</visible>
+      </control>
+	  
+	  <control>
+        <description>right</description>
+        <type>image</type>
+        <id>666006</id>
+        <posX>0</posX>
+        <posY>0</posY>
+        <width>5</width>
+        <height>5</height>
+        <texture></texture>
+        <!--colordiffuse>ffffffff</colordiffuse-->
+		<visible>control.hasfocus(00515)</visible>
+      </control>
+
+	  
+	  
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <dimColor>ffffffff</dimColor>
+		<!--visible allowhiddenfocus="true">control.hasfocus(00510)|control.hasfocus(00511)|control.hasfocus(00512)|control.hasfocus(00513)|control.hasfocus(00514)|control.hasfocus(250)|control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(350)|control.hasfocus(351)|control.hasfocus(352)|control.hasfocus(353)|control.hasfocus(354)|control.hasfocus(8001123)|control.hasfocus(8005555)|control.hasfocus(8006555)|control.hasfocus(411)|control.hasfocus(412)|control.hasfocus(413)|control.hasfocus(414)|control.hasfocus(415)|control.hasfocus(611)|control.hasfocus(612)|control.hasfocus(613)|control.hasfocus(614)|control.hasfocus(615)|string.equals(#skin.currentTile,00510)|string.equals(#skin.currentTile,00511)|string.equals(#skin.currentTile,00512)|string.equals(#skin.currentTile,00513)|string.equals(#skin.currentTile,00514)</visible-->
+		<visible allowhiddenfocus="true">string.equals(#skin.currentTile,00510)|string.equals(#skin.currentTile,00511)|string.equals(#skin.currentTile,00512)|string.equals(#skin.currentTile,00513)|string.equals(#skin.currentTile,00514)</visible>
+	  <control>
+        <description>BasicHome btn1</description>
+        <type>button</type>
+        <id>00510</id>
+		<posX>40</posX>
+        <posY>#home.button.posy</posY>
+		<height>#home.button.height</height>
+		<width>367</width>
+		<onfocus>#(skin.setstring('#skin.currentTile','00510'))</onfocus>
+        <label>#(iif(eq(#skin.tile11cne,'True'),'#tile11plugin.name','#tile11.name'))</label>
+		<oninfo>#(skin.setfocus(35,250))</oninfo>
+		<hyperlink>#tile11.hyperlink</hyperlink>
+                <hyperlinkParameter>#tile11plugin.parameter</hyperlinkParameter>
+		<textcolorNoFocus>ff888888</textcolorNoFocus>
+		<textcolor>ffffffff</textcolor>
+		<textureFocus overlay="">#(iif(eq(#skin.manualimg,'yes'),'btn\#home.button.type\#tile11pluginImg.png',iif(and(or(eq(#tile11plugin.hyperlink,'WorldWeather'), eq(#tile11plugin.hyperlink,'WorldWeatherLite')),not(eq(string.trim(#WorldWeather.TodayIconNumber),''))),'weather\buttons\#home.button.type\#WorldWeather.TodayIconNumber.png','btn\#home.button.type\#tile11plugin.hyperlink.png')))</textureFocus>
+		<textureNoFocus>#(iif(eq(#skin.manualimg,'yes'),'btn\#home.button.type\#tile11pluginImg.png',iif(and(or(eq(#tile11plugin.hyperlink,'WorldWeather'), eq(#tile11plugin.hyperlink,'WorldWeatherLite')),not(eq(string.trim(#WorldWeather.TodayIconNumber),''))),'weather\buttons\#home.button.type\#WorldWeather.TodayIconNumber.png','btn\#home.button.type\#tile11plugin.hyperlink.png')))</textureNoFocus>
+		<textalign>center</textalign>
+		<textYOff>#home.button.textyoff</textYOff>
+		<font>font13</font>
+        <onleft>00#skin.page3navleft</onleft>
+        <onup>#skin.Anav11</onup>
+		<ondown>8006555</ondown>
+		<onright>00511</onright>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666006)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666005)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+      </control>
+	  
+	  <control>
+        <description>BasicHome btn2</description>
+        <type>button</type>
+        <id>00511</id>
+		<posX>410</posX>
+        <posY>#home.button.posy</posY>
+		<height>#home.button.height</height>
+		<width>367</width>
+		<onfocus>#(skin.setstring('#skin.currentTile','00511'))</onfocus>
+        <label>#(iif(eq(#skin.tile12cne,'True'),'#tile12plugin.name','#tile12.name'))</label>
+		<oninfo>#(skin.setfocus(35,252))</oninfo>
+		<hyperlink>#tile12.hyperlink</hyperlink>
+                <hyperlinkParameter>#tile12plugin.parameter</hyperlinkParameter>
+		<textcolorNoFocus>ff888888</textcolorNoFocus>
+		<textcolor>ffffffff</textcolor>
+		<textureFocus overlay="">#(iif(eq(#skin.manualimg,'yes'),'btn\#home.button.type\#tile12pluginImg.png',iif(and(or(eq(#tile12plugin.hyperlink,'WorldWeather'), eq(#tile12plugin.hyperlink,'WorldWeatherLite')),not(eq(string.trim(#WorldWeather.TodayIconNumber),''))),'weather\buttons\#home.button.type\#WorldWeather.TodayIconNumber.png','btn\#home.button.type\#tile12plugin.hyperlink.png')))</textureFocus>
+		<textureNoFocus>#(iif(eq(#skin.manualimg,'yes'),'btn\#home.button.type\#tile12pluginImg.png',iif(and(or(eq(#tile12plugin.hyperlink,'WorldWeather'), eq(#tile12plugin.hyperlink,'WorldWeatherLite')),not(eq(string.trim(#WorldWeather.TodayIconNumber),''))),'weather\buttons\#home.button.type\#WorldWeather.TodayIconNumber.png','btn\#home.button.type\#tile12plugin.hyperlink.png')))</textureNoFocus>
+		<textalign>center</textalign>
+		<textYOff>#home.button.textyoff</textYOff>
+		<font>font13</font>
+        <onleft>00510</onleft>
+        <onup>#skin.Anav12</onup>
+		<ondown>8006555</ondown>
+		<onright>00512</onright>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666006)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666005)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+      </control>	  
+	  
+	  <control>
+        <description>BasicHome btn3</description>
+        <type>button</type>
+        <id>00512</id>
+		<posX>780</posX>
+        <posY>#home.button.posy</posY>
+		<height>#home.button.height</height>
+		<width>367</width>
+		<onfocus>#(skin.setstring('#skin.currentTile','00512'))</onfocus>
+        <label>#(iif(eq(#skin.tile13cne,'True'),'#tile13plugin.name','#tile13.name'))</label>
+		<oninfo>#(skin.setfocus(35,254))</oninfo>
+		<hyperlink>#tile13.hyperlink</hyperlink>
+                <hyperlinkParameter>#tile13plugin.parameter</hyperlinkParameter>
+		<textcolorNoFocus>ff888888</textcolorNoFocus>
+		<textcolor>ffffffff</textcolor>
+		<textureFocus overlay="">#(iif(eq(#skin.manualimg,'yes'),'btn\#home.button.type\#tile13pluginImg.png',iif(and(or(eq(#tile13plugin.hyperlink,'WorldWeather'), eq(#tile13plugin.hyperlink,'WorldWeatherLite')),not(eq(string.trim(#WorldWeather.TodayIconNumber),''))),'weather\buttons\#home.button.type\#WorldWeather.TodayIconNumber.png','btn\#home.button.type\#tile13plugin.hyperlink.png')))</textureFocus>
+		<textureNoFocus>#(iif(eq(#skin.manualimg,'yes'),'btn\#home.button.type\#tile13pluginImg.png',iif(and(or(eq(#tile13plugin.hyperlink,'WorldWeather'), eq(#tile13plugin.hyperlink,'WorldWeatherLite')),not(eq(string.trim(#WorldWeather.TodayIconNumber),''))),'weather\buttons\#home.button.type\#WorldWeather.TodayIconNumber.png','btn\#home.button.type\#tile13plugin.hyperlink.png')))</textureNoFocus>
+		<textalign>center</textalign>
+		<textYOff>#home.button.textyoff</textYOff>
+		<font>font13</font>
+        <onleft>00511</onleft>
+        <onup>#skin.Anav13</onup>
+		<ondown>8006555</ondown>
+		<onright>00513</onright>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666006)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666005)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+      </control>
+
+	  <control>
+        <description>BasicHome btn4</description>
+        <type>button</type>
+        <id>00513</id>
+		<posX>1150</posX>
+        <posY>#home.button.posy</posY>
+		<height>#home.button.height</height>
+		<width>367</width>
+		<onfocus>#(skin.setstring('#skin.currentTile','00513'))</onfocus>
+        <label>#(iif(eq(#skin.tile14cne,'True'),'#tile14plugin.name','#tile14.name'))</label>
+		<oninfo>#(skin.setfocus(35,256))</oninfo>
+		<hyperlink>#tile14.hyperlink</hyperlink>
+                <hyperlinkParameter>#tile14plugin.parameter</hyperlinkParameter>
+		<textcolorNoFocus>ff888888</textcolorNoFocus>
+		<textcolor>ffffffff</textcolor>
+		<textureFocus overlay="">#(iif(eq(#skin.manualimg,'yes'),'btn\#home.button.type\#tile14pluginImg.png',iif(and(or(eq(#tile14plugin.hyperlink,'WorldWeather'), eq(#tile14plugin.hyperlink,'WorldWeatherLite')),not(eq(string.trim(#WorldWeather.TodayIconNumber),''))),'weather\buttons\#home.button.type\#WorldWeather.TodayIconNumber.png','btn\#home.button.type\#tile14plugin.hyperlink.png')))</textureFocus>
+		<textureNoFocus>#(iif(eq(#skin.manualimg,'yes'),'btn\#home.button.type\#tile14pluginImg.png',iif(and(or(eq(#tile14plugin.hyperlink,'WorldWeather'), eq(#tile14plugin.hyperlink,'WorldWeatherLite')),not(eq(string.trim(#WorldWeather.TodayIconNumber),''))),'weather\buttons\#home.button.type\#WorldWeather.TodayIconNumber.png','btn\#home.button.type\#tile14plugin.hyperlink.png')))</textureNoFocus>
+		<textalign>center</textalign>
+		<textYOff>#home.button.textyoff</textYOff>
+		<font>font13</font>
+        <onleft>00512</onleft>
+        <onup>#skin.Anav14</onup>
+		<ondown>8006555</ondown>
+		<onright>00514</onright>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666006)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666005)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+      </control>
+
+	  <control>
+        <description>BasicHome btn5</description>
+        <type>button</type>
+        <id>00514</id>
+		<posX>1520</posX>
+        <posY>#home.button.posy</posY>
+		<height>#home.button.height</height>
+		<width>367</width>
+		<onfocus>#(skin.setstring('#skin.currentTile','00514'))</onfocus>
+        <label>#(iif(eq(#skin.tile15cne,'True'),'#tile15plugin.name','#tile15.name'))</label>
+		<oninfo>#(skin.setfocus(35,258))</oninfo>
+		<hyperlink>#tile15.hyperlink</hyperlink>
+                <hyperlinkParameter>#tile15plugin.parameter</hyperlinkParameter>
+		<textcolorNoFocus>ff888888</textcolorNoFocus>
+		<textcolor>ffffffff</textcolor>
+		<textureFocus overlay="">#(iif(eq(#skin.manualimg,'yes'),'btn\#home.button.type\#tile15pluginImg.png',iif(and(or(eq(#tile15plugin.hyperlink,'WorldWeather'), eq(#tile15plugin.hyperlink,'WorldWeatherLite')),not(eq(string.trim(#WorldWeather.TodayIconNumber),''))),'weather\buttons\#home.button.type\#WorldWeather.TodayIconNumber.png','btn\#home.button.type\#tile15plugin.hyperlink.png')))</textureFocus>
+		<textureNoFocus>#(iif(eq(#skin.manualimg,'yes'),'btn\#home.button.type\#tile15pluginImg.png',iif(and(or(eq(#tile15plugin.hyperlink,'WorldWeather'), eq(#tile15plugin.hyperlink,'WorldWeatherLite')),not(eq(string.trim(#WorldWeather.TodayIconNumber),''))),'weather\buttons\#home.button.type\#WorldWeather.TodayIconNumber.png','btn\#home.button.type\#tile15plugin.hyperlink.png')))</textureNoFocus>
+		<textalign>center</textalign>
+		<textYOff>#home.button.textyoff</textYOff>
+		<font>font13</font>
+        <onleft>00513</onleft>
+        <onup>#skin.Anav15</onup>
+		<ondown>8006555</ondown>
+		<onright>00#skin.page3navright</onright>
+		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666006)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="2500,0" reversible="true" time="350" condition="control.isVisible(666005)">Conditional</animation>
+		<animation effect="fade" time="350" reversible="true">hidden</animation>
+      </control>
+	  
+
+     <control Style="BasicHomeButton">
+        <description>BasicHome Plugins</description>
+        <type>button</type>
+        <id>8001125</id>
+        <posX>795</posX>
+        <posY>995</posY>
+		<hyperlink>34</hyperlink>
+		<height>40</height>
+		<width>40</width>
+        <label></label>
+		<textcolorNoFocus>ff6c7880</textcolorNoFocus>
+		<textcolor>ffffffff</textcolor>
+		<textureFocus>plugins.png</textureFocus>
+		<textureNoFocus>plugins.png</textureNoFocus>
+		<align>center</align>
+		<font>font14</font>
+        <onleft>8001125</onleft>
+        <onup>#skin.currentTile</onup>
+		<ondown>8001125</ondown>
+		<onright>8001123</onright>
+        <animation effect="fade" delay="0" reversible="false" time="200">focus</animation>
+		<animation effect="fade" delay="0" reversible="false" time="100">Hidden</animation>
+		<animation effect="slide" end="70,0" time="150">Hidden</animation>
+		<animation effect="slide" start="70,0" time="200">Visible</animation>
+        <animation effect="zoom" start="100,100" end="110,110" time="1000" condition="control.hasFocus(8001125)" pulse="true">conditional</animation>
+		<visible allowhiddenfocus="true">control.hasfocus(8001123)|control.hasfocus(8001125)|control.hasfocus(8005555)|control.hasfocus(8006555)</visible>
+	 </control> 
+
+	 <control Style="BasicHomeButton">
+        <description>BasicHome settings</description>
+        <type>button</type>
+        <id>8001123</id>
+        <posX>865</posX>
+        <posY>995</posY>
+		<hyperlink>4</hyperlink>
+		<height>40</height>
+		<width>40</width>
+        <label></label>
+		<textcolorNoFocus>ff6c7880</textcolorNoFocus>
+		<textcolor>ffffffff</textcolor>
+		<textureFocus>setting.png</textureFocus>
+		<textureNoFocus>setting.png</textureNoFocus>
+		<align>center</align>
+		<font>font14</font>
+        <onleft>8001125</onleft>
+        <onup>#skin.currentTile</onup>
+		<ondown>8001123</ondown>
+		<onright>8006555</onright>
+        <animation effect="fade" delay="0" reversible="false" time="200">focus</animation>
+		<animation effect="fade" delay="0" reversible="false" time="100">Hidden</animation>
+		<animation effect="slide" end="70,0" time="150">Hidden</animation>
+		<animation effect="slide" start="70,0" time="200">Visible</animation>
+        <animation effect="zoom" start="100,100" end="110,110" time="1000" condition="control.hasFocus(8001123)" pulse="true">conditional</animation>
+		<visible allowhiddenfocus="true">control.hasfocus(8001123)|control.hasfocus(8001125)|control.hasfocus(8005555)|control.hasfocus(8006555)</visible>
+	 </control> 
+
+	 <control Style="BasicHomeButton">
+        <description>BasicHome settings</description>
+        <type>button</type>
+        <id>8005555</id>
+        <posX>1005</posX>
+        <posY>995</posY>
+		<onclick>#(skin.setfocus(35,20800))#(skin.setstring('#skin.setnav','8005555'))</onclick>
+		<height>40</height>
+		<width>40</width>
+        <label></label>
+		<textcolorNoFocus>ff6c7880</textcolorNoFocus>
+		<textcolor>ffffffff</textcolor>
+		<textureFocus>editorfocus.png</textureFocus>
+		<textureNoFocus>editor.png</textureNoFocus>
+		<align>center</align>
+        <onleft>8006555</onleft>
+        <onup>#skin.currentTile</onup>
+		<ondown>8005555</ondown>
+		<onright>8005555</onright>
+        <animation effect="fade" delay="0" reversible="false" time="200">focus</animation>
+		<animation effect="fade" delay="0" reversible="false" time="100">Hidden</animation>
+		<animation effect="slide" end="-70,0" time="150">Hidden</animation>
+		<animation effect="slide" start="-70,0" time="200">Visible</animation>
+        <animation effect="zoom" start="100,100" end="110,110" time="1000" condition="control.hasFocus(8005555)" pulse="true">conditional</animation>
+		<visible allowhiddenfocus="true">control.hasfocus(8001123)|control.hasfocus(8001125)|control.hasfocus(8005555)|control.hasfocus(8006555)</visible>
+	 </control> 	
+
+	 <control Style="BasicHomeButton">
+        <description>BasicHome settings</description>
+        <type>button</type>
+        <id>8006555</id>
+        <posX>935</posX>
+        <posY>995</posY>
+		<action>99</action>
+		<height>40</height>
+		<width>40</width>
+        <label></label>
+		<textcolorNoFocus>ff6c7880</textcolorNoFocus>
+		<textcolor>ffffffff</textcolor>
+		<textureFocus>basichome_button_exit.png</textureFocus>
+		<textureNoFocus>basichome_button_exit.png</textureNoFocus>
+		<align>center</align>
+        <onleft>8001123</onleft>
+        <onup>#skin.currentTile</onup>
+		<ondown>8006555</ondown>
+		<onright>8005555</onright>
+		<animation effect="fade" delay="0" reversible="false" time="300">Visible</animation>
+		<animation effect="fade" delay="0" reversible="false" time="200">Hidden</animation>
+        <animation effect="zoom" start="100,100" end="110,110" time="1000" condition="control.hasFocus(8006555)" pulse="true">conditional</animation>
+		<visible allowhiddenfocus="true">control.hasfocus(8001123)|control.hasfocus(8001125)|control.hasfocus(8005555)|control.hasfocus(8006555)</visible>
+	 </control> 
+	 
+
+	  
+    </control>
+  </controls>
+</window>
+
+
+

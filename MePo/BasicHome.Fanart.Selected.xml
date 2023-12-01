@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+  
+    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::MOVPICS FANARTS:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->	
+	
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#(switch(
+                   eq(#fanarthandler.movingpicture.latests.available,'true'),#fanarthandler.movingpicture.latests.backdrop1.any,
+                   eq(1,1),#fanarthandler.movingpicture.backdrop1.any)
+                 )</texture>
+	  <visible>control.isvisible(7010004)+control.isvisible(91919299)+control.isvisible(91919297)</visible>
+    </control>	
+
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#(switch(
+                   eq(#fanarthandler.movingpicture.latests.available,'true'),#fanarthandler.movingpicture.latests.backdrop2.any,
+                   eq(1,1),#fanarthandler.movingpicture.backdrop2.any)
+                 )</texture>
+	  <visible>control.isvisible(7010004)+control.isvisible(91919299)+control.isvisible(91919298)</visible>
+    </control>	
+
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.movingpicture.latest1.fanart</texture>
+	  <visible>control.hasfocus(91919991)</visible>
+    </control>	
+	
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.movingpicture.latest2.fanart</texture>
+	  <visible>control.hasfocus(91919992)</visible>
+    </control>	
+
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.movingpicture.latest3.fanart</texture>
+	  <visible>control.hasfocus(91919993)</visible>
+    </control>	
+
+
+    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::TVSERIES FANARTS:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->	
+	
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#(switch(
+                   eq(#fanarthandler.tvseries.latests.available,'true'),#fanarthandler.tvseries.latests.backdrop1.any,
+                   eq(1,1),#fanarthandler.tvseries.backdrop1.any)
+                 )</texture>
+	  <visible>control.isvisible(7010008)+control.isvisible(91919299)+control.isvisible(91919297)</visible>
+    </control>	
+
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#(switch(
+                   eq(#fanarthandler.tvseries.latests.available,'true'),#fanarthandler.tvseries.latests.backdrop2.any,
+                   eq(1,1),#fanarthandler.tvseries.backdrop2.any)
+                 )</texture>
+	  <visible>control.isvisible(7010008)+control.isvisible(91919299)+control.isvisible(91919298)</visible>
+    </control>	
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.tvseries.latest1.fanart</texture>
+	  <visible>control.hasfocus(91919994)</visible>
+    </control>	
+	
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.tvseries.latest2.fanart</texture>
+	  <visible>control.hasfocus(91919995)</visible>
+    </control>	
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.tvseries.latest3.fanart</texture>
+	  <visible>control.hasfocus(91919996)</visible>
+    </control>		
+	
+
+    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::MYVIDEOS FANARTS:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->	
+
+	
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#(switch(
+                   eq(#fanarthandler.movie.latests.available,'true'),#fanarthandler.movie.latests.backdrop1.any,
+                   eq(1,1),#fanarthandler.movie.scraper.backdrop1.any)
+                 )</texture>
+	  <visible>control.isvisible(7010020)+control.isvisible(91919299)+control.isvisible(91919297)</visible>
+    </control>	
+
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#(switch(
+                   eq(#fanarthandler.movie.latests.available,'true'),#fanarthandler.movie.latests.backdrop2.any,
+                   eq(1,1),#fanarthandler.movie.scraper.backdrop2.any)
+                 )</texture>
+	  <visible>control.isvisible(7010020)+control.isvisible(91919299)+control.isvisible(91919298)</visible>
+    </control>	
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.myvideo.latest1.fanart</texture>
+	  <visible>control.hasfocus(91915991)</visible>
+    </control>		
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.myvideo.latest2.fanart</texture>
+	  <visible>control.hasfocus(91915992)</visible>
+    </control>		
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.myvideo.latest3.fanart</texture>
+	  <visible>control.hasfocus(91915993)</visible>
+    </control>	
+
+
+    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::MYMUSIC FANARTS:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->	
+
+	
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#(switch(
+                   eq(#fanarthandler.music.latests.available,'true'),#fanarthandler.music.latests.backdrop1.any,
+                   eq(1,1),#fanarthandler.music.scraper.backdrop1.any)
+                 )</texture>
+	  <visible>control.isvisible(7010016)+control.isvisible(91919299)+control.isvisible(91919297)</visible>
+    </control>	
+
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#(switch(
+                   eq(#fanarthandler.music.latests.available,'true'),#fanarthandler.music.latests.backdrop2.any,
+                   eq(1,1),#fanarthandler.music.scraper.backdrop2.any)
+                 )</texture>
+	  <visible>control.isvisible(7010016)+control.isvisible(91919299)+control.isvisible(91919298)</visible>
+    </control>	
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.music.latest1.fanart</texture>
+	  <visible>control.hasfocus(91919997)</visible>
+    </control>		
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.music.latest2.fanart</texture>
+	  <visible>control.hasfocus(91919998)</visible>
+    </control>		
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.music.latest3.fanart</texture>
+	  <visible>control.hasfocus(91919999)</visible>
+    </control>		
+	
+    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::MVCENTRAL FANARTS:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->	
+
+	
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#(switch(
+                   eq(#fanarthandler.mvcentral.latests.available,'true'),#fanarthandler.mvcentral.latests.backdrop1.any,
+                   eq(1,1),#fanarthandler.music.scraper.backdrop1.any)
+                 )</texture>
+	  <visible>control.isvisible(7010018)+control.isvisible(91919299)+control.isvisible(91919297)</visible>
+    </control>	
+
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#(switch(
+                   eq(#fanarthandler.mvcentral.latests.available,'true'),#fanarthandler.mvcentral.latests.backdrop2.any,
+                   eq(1,1),#fanarthandler.music.scraper.backdrop2.any)
+                 )</texture>
+	  <visible>control.isvisible(7010018)+control.isvisible(91919299)+control.isvisible(91919298)</visible>
+    </control>	
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.mvcentral.latest1.fanart</texture>
+	  <visible>control.hasfocus(91929928)</visible>
+    </control>		
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.mvcentral.latest2.fanart</texture>
+	  <visible>control.hasfocus(91929929)</visible>
+    </control>		
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.mvcentral.latest3.fanart</texture>
+	  <visible>control.hasfocus(91929930)</visible>
+    </control>		
+	
+    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::TV FANARTS:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->	
+
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#fanarthandler.tv.userdef.backdrop1.any</texture>
+	  <visible>[control.isvisible(7010012)|control.isvisible(7010021)]+control.isvisible(91919299)+control.isvisible(91919297)</visible>
+    </control>	
+
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#fanarthandler.tv.userdef.backdrop2.any</texture>
+	  <visible>[control.isvisible(7010012)|control.isvisible(7010021)]+control.isvisible(91919299)+control.isvisible(91919298)</visible>
+    </control>	
+
+    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::WORLD WEATHER FANARTS:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->	
+
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#fanarthandler.weather.backdrop1</texture>
+	  <visible>[[control.isvisible(75100000)|control.isvisible(75100001)]+control.isvisible(91919283)+control.isvisible(91919281)]</visible>
+    </control>	
+
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#fanarthandler.weather.backdrop2</texture>
+	  <visible>[[control.isvisible(75100000)|control.isvisible(75100001)]+control.isvisible(91919283)+control.isvisible(91919282)]</visible>
+    </control>	
+
+    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::PICTURES FANARTS:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->	
+
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#(switch(
+                   eq(#fanarthandler.spotlight.random.available,'true'),#fanarthandler.spotlight.backdrop1.any,
+                   eq(1,1),#fanarthandler.picture.userdef.backdrop1.any)
+                 )</texture>
+	  <visible>[control.isvisible(7013016)+control.isvisible(91919299)+control.isvisible(91919297)]</visible>
+    </control>	
+
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#(switch(
+                   eq(#fanarthandler.spotlight.random.available,'true'),#fanarthandler.spotlight.backdrop2.any,
+                   eq(1,1),#fanarthandler.picture.userdef.backdrop2.any)
+                 )</texture>
+	  <visible>[control.isvisible(7013016)+control.isvisible(91919299)+control.isvisible(91919298)]</visible>
+    </control>	
+
+  </controls>
+</window>

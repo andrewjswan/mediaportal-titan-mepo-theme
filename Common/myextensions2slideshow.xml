@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>802</id>
+<defaultcontrol>2</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<disabletopbar>true</disabletopbar>
+<define>#header.hover:#(iif(#skin.background.useHover, 'hover_extensions.png', 'background.png'))</define>	
+<controls>
+
+  <!--            :: BACKGROUNDS ::           	 -->
+	
+	<control>
+		<description>BACKGROUND</description>
+		<id>0</id>
+		<type>image</type>
+    <posX>0</posX>
+    <posY>0</posY>
+    <width>1920</width>
+    <height>1080</height>
+		<texture>#header.hover</texture>
+    <shouldCache>true</shouldCache>		
+	</control>
+
+	<control>
+		<description>background listview</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+    <posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>fanart_overlay.png</texture>
+		<visible>skin.hassetting(#skin.background.useHover)</visible>		
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+			
+	<control>
+            <id>0</id>
+            <description>bar image</description>
+            <type>image</type>
+            <posX>32</posX>
+            <posY>41</posY>
+            <width>1216</width>
+            <height>92</height>
+            <texture>calibration_bar.png</texture>
+        </control>
+				
+        <control>
+            <id>10</id>
+            <description>row 1 label</description>
+            <type>label</type>
+            <posX>124</posX>
+            <posY>68</posY>
+            <font>font16</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label>-</label>
+        </control>
+				
+        <control>
+            <id>11</id>
+            <description>row 2 label</description>
+            <type>label</type>
+            <posX>1066</posX>
+            <posY>68</posY>
+            <font>font16</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label>-</label>
+        </control>
+				
+        <control>
+            <id>12</id>
+            <description>row 2 extra label</description>
+            <type>label</type>
+            <posX>800</posX>
+            <posY>68</posY>
+            <font>font16</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label>-</label>
+        </control>
+				
+        <control>
+            <type>progress</type>
+            <posX>6</posX>
+            <posY>5</posY>
+            <width>208</width>
+            <height>14</height>
+			<label>#Social.DownloadProgress</label>
+            <!-- <visible>string.equals(#Social.DownloadProgress, )</visible> -->
+        </control>
+				
+    </controls>
+</window>

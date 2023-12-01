@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<controls>  
+        
+  <!--            :: FOCUS FRAMES ::            -->
+    
+  <control>
+    <description>group element</description>
+    <type>group</type>
+    <dimColor>ffffffff</dimColor>
+    
+    <control Style="HomeButtonMenuFocus">
+      <description>BasicHome 1 Focus</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>40</posX>
+      <posY>#home.button.posy</posY>
+      <visible>[control.hasfocus(00500)|control.hasfocus(00505)|control.hasfocus(00510)|control.hasfocus(00515)|control.hasfocus(00520)]</visible>
+      <animation effect="fade" time="250" condition="[control.hasfocus(00500)|control.hasfocus(00505)|control.hasfocus(00510)|control.hasfocus(00515)|control.hasfocus(00520)]">conditional</animation>
+    </control>
+        
+    <control Style="HomeButtonMenuFocus">
+      <description>BasicHome 2 Focus</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>410</posX>
+      <posY>#home.button.posy</posY>
+      <visible>[control.hasfocus(00501)|control.hasfocus(00506)|control.hasfocus(00511)|control.hasfocus(00516)|control.hasfocus(00521)]</visible>
+      <animation effect="fade" time="250" condition="[control.hasfocus(00501)|control.hasfocus(00506)|control.hasfocus(00511)|control.hasfocus(00516)|control.hasfocus(00521)]">conditional</animation>
+    </control>
+    
+    <control Style="HomeButtonMenuFocus">
+      <description>BasicHome 3 Focus</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>780</posX>
+      <posY>#home.button.posy</posY>
+      <visible>[control.hasfocus(00502)|control.hasfocus(00507)|control.hasfocus(00512)|control.hasfocus(00517)|control.hasfocus(00522)]</visible>
+      <animation effect="fade" time="250" condition="[control.hasfocus(00502)|control.hasfocus(00507)|control.hasfocus(00512)|control.hasfocus(00517)|control.hasfocus(00522)]">conditional</animation>
+    </control>
+            
+    <control Style="HomeButtonMenuFocus">
+      <description>BasicHome 4 Focus</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1150</posX>
+      <posY>#home.button.posy</posY>
+      <visible>[control.hasfocus(00503)|control.hasfocus(00508)|control.hasfocus(00513)|control.hasfocus(00518)|control.hasfocus(00523)]</visible>
+      <animation effect="fade" time="250" condition="[control.hasfocus(00503)|control.hasfocus(00508)|control.hasfocus(00513)|control.hasfocus(00518)|control.hasfocus(00523)]">conditional</animation>
+    </control>
+      
+    <control Style="HomeButtonMenuFocus">
+      <description>BasicHome 5 Focus</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1520</posX>
+      <posY>#home.button.posy</posY>
+      <visible>[control.hasfocus(00504)|control.hasfocus(00509)|control.hasfocus(00514)|control.hasfocus(00519)|control.hasfocus(00524)]</visible>
+      <animation effect="fade" time="250" condition="[control.hasfocus(00504)|control.hasfocus(00509)|control.hasfocus(00514)|control.hasfocus(00519)|control.hasfocus(00524)]">conditional</animation>
+    </control>
+      
+  </control>
+
+   <!--            :: MENU INDICATOR ::            -->
+
+   <control>
+       <description>right menu indicator</description>
+       <id>0</id>
+       <type>image</type>
+       <posX>1890</posX>
+       <posY>#home.menu.indicator.posy</posY>
+       <width>30</width>
+       <height>149</height>
+       <visible>[control.hasfocus(00504)|control.hasfocus(00509)|control.hasfocus(00514)|control.hasfocus(00519)|control.hasfocus(00524)]+!string.equals(#skin.pages,one)</visible>
+       <texture>basichome_nextpage_right.png</texture>
+       <animation effect="slide" start="60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="0">visible</animation>
+       <animation effect="slide" start="0,0" end="60,0" tween="quadratic" easing="in" time="250" delay="0">hidden</animation>
+       <animation effect="fade" time="250">WindowOpen</animation>
+       <animation effect="fade" time="250">WindowClose</animation>
+   </control>
+ 
+   <control>
+       <description>left menu indicator</description>
+       <id>0</id>
+       <type>image</type>
+       <posX>0</posX>
+       <posY>#home.menu.indicator.posy</posY>
+       <width>30</width>
+       <height>149</height>
+       <texture>basichome_nextpage_left.png</texture>
+       <visible>[control.hasfocus(00500)|control.hasfocus(00505)|control.hasfocus(00510)|control.hasfocus(00515)|control.hasfocus(00520)]+!string.equals(#skin.pages,one)</visible>
+       <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="0">visible</animation>
+       <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="0">hidden</animation>
+       <animation effect="fade" time="250">WindowOpen</animation>
+       <animation effect="fade" time="250">WindowClose</animation>
+   </control>
+
+   <control>
+       <description>down menu indicator</description>
+       <id>0</id>
+       <type>image</type>
+       <posX>885</posX>
+       <posY>1050</posY>
+       <width>149</width>
+       <height>30</height>
+       <texture>basichome_nextpage_down.png</texture>
+       <visible>string.equals(#skin.rss.info,true)+[control.hasfocus(00502)|control.hasfocus(00507)|control.hasfocus(00512)|control.hasfocus(00517)|control.hasfocus(00522)]</visible>
+       <animation effect="slide" start="0,60" end="0,0" tween="quadratic" easing="in" time="250" delay="0">visible</animation>
+       <animation effect="slide" start="0,0" end="0,60" tween="quadratic" easing="in" time="250" delay="0">hidden</animation>
+       <animation effect="fade" time="250">WindowOpen</animation>
+       <animation effect="fade" time="250">WindowClose</animation>
+   </control>
+
+ </controls>
+</window>

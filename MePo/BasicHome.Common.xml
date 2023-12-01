@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<controls>  
+        
+    <control>
+      <description>Home ICON</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>66</posX>
+      <posY>38</posY>
+      <width>62</width>
+      <height>55</height>
+      <texture>icon_home.png</texture>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <visible>!control.hasthumb(9870789)</visible>
+    </control>
+
+    <control>
+      <description>Home Holiday ICON</description>
+      <type>image</type>
+      <id>9870789</id>
+      <posX>66</posX>
+      <posY>38</posY>
+      <width>60</width>
+      <height>60</height>
+      <texture>#fanarthandler.holiday.icon</texture>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+
+    <control>
+      <description>Bottom Menu Background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>52</posX>
+      <posY>958</posY>
+      <width>1820</width>
+      <height>84</height>
+      <texture>BasicHomeSubBG.png</texture>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>      
+
+    <control>
+      <description>Exit menu button</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>935</posX>
+      <posY>995</posY>
+      <width>40</width>
+      <height>40</height>
+      <texture>basichome_button_exit.png</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <animation effect="fade" time="250" start="0" end="100">WindowOpen</animation>
+      <animation effect="fade" time="250" start="100" end="0">WindowClose</animation>
+      <animation effect="fade" time="350" start="100" end="60" condition="true">conditional</animation>
+      <animation effect="fade" time="350" start="60" end="0">hidden</animation>
+      <visible>!string.equals(#skin.rss.info,true)+![control.isvisible(8006555)|control.isvisible(8106555)|control.isvisible(8206555)|control.isvisible(8306555)|control.isvisible(8406555)]</visible>
+    </control>
+
+    <control>
+      <description>Shutdown label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1100</posX>
+      <posY>995</posY>
+      <width>620</width>
+      <font>TitanLight14</font>
+      <label>1030</label>
+      <visible>control.hasfocus(8006555)|control.hasfocus(8106555)|control.hasfocus(8206555)|control.hasfocus(8306555)|control.hasfocus(8406555)</visible>
+      <animation effect="fade" time="450" delay="250">Visible</animation>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation> 
+    </control>
+    <control>
+      <description>Edit label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1100</posX>
+      <posY>995</posY>
+      <width>620</width>
+      <font>TitanLight14</font>
+      <label>2076</label>
+      <visible>control.hasfocus(8005555)|control.hasfocus(8105555)|control.hasfocus(8205555)|control.hasfocus(8305555)|control.hasfocus(8405555)</visible>
+      <animation effect="fade" time="450" delay="250">Visible</animation>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation> 
+    </control>
+    <control>
+      <description>Settings label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1100</posX>
+      <posY>995</posY>
+      <width>620</width>
+      <font>TitanLight14</font>
+      <label>5</label>
+      <visible>control.hasfocus(8001123)|control.hasfocus(8101123)|control.hasfocus(8201123)|control.hasfocus(8301123)|control.hasfocus(8401123)</visible>
+      <animation effect="fade" time="450" delay="250">Visible</animation>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation> 
+    </control>
+    <control>
+      <description>Plugins label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1100</posX>
+      <posY>995</posY>
+      <width>620</width>
+      <font>TitanLight14</font>
+      <label>913</label>
+      <visible>control.hasfocus(8001125)|control.hasfocus(8101125)|control.hasfocus(8201125)|control.hasfocus(8301125)|control.hasfocus(8401125)</visible>
+      <animation effect="fade" time="450" delay="250">Visible</animation>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation> 
+    </control>
+
+ </controls>
+</window>

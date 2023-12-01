@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+  
+    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::HOVER BACKGROUND IMAGE:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->	
+
+    <control Style="HomeBasicFanart">
+      <description>Hover background</description>
+      <type>image</type>
+      <id>99866</id>
+      <texture>hover_#(switch(eq(#skin.currentTile,'00500'),#tile1.hover, eq(#skin.currentTile,'00501'),#tile2.hover, eq(#skin.currentTile,'00503'),#tile4.hover, eq(#skin.currentTile,'00504'),#tile5.hover, eq(#skin.currentTile,'00505'),#tile6.hover, eq(#skin.currentTile,'00506'),#tile7.hover, eq(#skin.currentTile,'00507'),#tile8.hover, eq(#skin.currentTile,'00508'),#tile9.hover, eq(#skin.currentTile,'00509'),#tile10.hover, eq(#skin.currentTile,'00510'),#tile11.hover, eq(#skin.currentTile,'00511'),#tile12.hover, eq(#skin.currentTile,'00512'),#tile13.hover, eq(#skin.currentTile,'00513'),#tile14.hover, eq(#skin.currentTile,'00514'),#tile15.hover, eq(#skin.currentTile,'00515'),#tile16.hover, eq(#skin.currentTile,'00516'),#tile17.hover, eq(#skin.currentTile,'00517'),#tile18.hover, eq(#skin.currentTile,'00518'),#tile19.hover, eq(#skin.currentTile,'00519'),#tile20.hover, eq(#skin.currentTile,'00520'),#tile21.hover, eq(#skin.currentTile,'00521'),#tile22.hover, eq(#skin.currentTile,'00522'),#tile23.hover, eq(#skin.currentTile,'00523'),#tile24.hover, eq(#skin.currentTile,'00524'),#tile25.hover, eq(1,1),'')).png</texture>
+      <visible>!control.isvisible(99066)+!control.isvisible(99166)+!control.isvisible(99266)+string.equals(#skin.background.useHover,true)</visible>
+    </control>
+
+    <control Style="HomeBasicFanart">
+      <description>Basic Home Bottom Buttons settings background</description>
+      <type>image</type>
+      <id>99066</id>
+      <texture>background_settings.png</texture>
+      <visible>control.hasfocus(8201123)|control.hasfocus(8201125)|control.hasfocus(8205555)|control.hasfocus(8206555)|control.hasfocus(8101123)|control.hasfocus(8101125)|control.hasfocus(8105555)|control.hasfocus(8106555)|control.hasfocus(8001123)|control.hasfocus(8001125)|control.hasfocus(8005555)|control.hasfocus(8006555)|control.hasfocus(8301123)|control.hasfocus(8301125)|control.hasfocus(8305555)|control.hasfocus(8306555)|control.hasfocus(8401123)|control.hasfocus(8401125)|control.hasfocus(8405555)|control.hasfocus(8406555)</visible>
+    </control>
+
+    <control Style="HomeBasicFanart">
+      <description>Basic Home Tiles settings background</description>
+      <type>image</type>
+      <id>99166</id>
+      <texture>background_settings.png</texture>
+      <visible>control.hasfocus(230)|control.hasfocus(231)|control.hasfocus(232)|control.hasfocus(233)|control.hasfocus(234)|control.hasfocus(235)|control.hasfocus(236)|control.hasfocus(237)|control.hasfocus(238)|control.hasfocus(239)|control.hasfocus(330)|control.hasfocus(331)|control.hasfocus(332)|control.hasfocus(333)|control.hasfocus(334)|control.hasfocus(335)|control.hasfocus(400)|control.hasfocus(401)|control.hasfocus(402)|control.hasfocus(403)|control.hasfocus(404)|control.hasfocus(605)|control.hasfocus(604)|control.hasfocus(603)|control.hasfocus(602)|control.hasfocus(601)|control.hasfocus(240)|control.hasfocus(241)|control.hasfocus(242)|control.hasfocus(243)|control.hasfocus(244)|control.hasfocus(245)|control.hasfocus(246)|control.hasfocus(247)|control.hasfocus(248)|control.hasfocus(249)|control.hasfocus(340)|control.hasfocus(341)|control.hasfocus(342)|control.hasfocus(343)|control.hasfocus(344)|control.hasfocus(406)|control.hasfocus(407)|control.hasfocus(408)|control.hasfocus(409)|control.hasfocus(410)|control.hasfocus(606)|control.hasfocus(607)|control.hasfocus(608)|control.hasfocus(609)|control.hasfocus(610)|control.hasfocus(250)|control.hasfocus(251)|control.hasfocus(252)|control.hasfocus(253)|control.hasfocus(254)|control.hasfocus(255)|control.hasfocus(256)|control.hasfocus(257)|control.hasfocus(258)|control.hasfocus(259)|control.hasfocus(350)|control.hasfocus(351)|control.hasfocus(352)|control.hasfocus(353)|control.hasfocus(354)|control.hasfocus(411)|control.hasfocus(412)|control.hasfocus(413)|control.hasfocus(414)|control.hasfocus(415)|control.hasfocus(611)|control.hasfocus(612)|control.hasfocus(613)|control.hasfocus(614)|control.hasfocus(615)|control.hasfocus(260)|control.hasfocus(261)|control.hasfocus(262)|control.hasfocus(263)|control.hasfocus(264)|control.hasfocus(265)|control.hasfocus(266)|control.hasfocus(267)|control.hasfocus(268)|control.hasfocus(269)|control.hasfocus(360)|control.hasfocus(361)|control.hasfocus(362)|control.hasfocus(363)|control.hasfocus(364)|control.hasfocus(416)|control.hasfocus(417)|control.hasfocus(418)|control.hasfocus(419)|control.hasfocus(420)|control.hasfocus(616)|control.hasfocus(617)|control.hasfocus(618)|control.hasfocus(619)|control.hasfocus(620)|control.hasfocus(270)|control.hasfocus(271)|control.hasfocus(272)|control.hasfocus(273)|control.hasfocus(274)|control.hasfocus(275)|control.hasfocus(276)|control.hasfocus(277)|control.hasfocus(278)|control.hasfocus(279)|control.hasfocus(370)|control.hasfocus(371)|control.hasfocus(372)|control.hasfocus(373)|control.hasfocus(374)|control.hasfocus(375)|control.hasfocus(421)|control.hasfocus(422)|control.hasfocus(423)|control.hasfocus(424)|control.hasfocus(425)|control.hasfocus(621)|control.hasfocus(622)|control.hasfocus(623)|control.hasfocus(624)|control.hasfocus(625)</visible>
+    </control>
+
+    <control Style="HomeBasicFanart">
+      <description>Basic Home Buttons settings background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>background_settings.png</texture>
+      <visible>control.hasfocus(20800)|control.hasfocus(20801)|control.hasfocus(20802)|control.hasfocus(20803)|control.hasfocus(20804)|control.hasfocus(20805)|control.hasfocus(20806)|control.hasfocus(20807)|control.hasfocus(20808)|control.hasfocus(20809)|control.hasfocus(20810)|control.hasfocus(20811)|control.hasfocus(20812)|control.hasfocus(20813)|control.hasfocus(20814)|control.hasfocus(20815)|control.hasfocus(20890)|control.hasfocus(20891)|control.hasfocus(20892)|control.hasfocus(20893)|control.hasfocus(20894)|control.hasfocus(20895)|control.hasfocus(20896)|control.hasfocus(20897)|control.hasfocus(20898)|control.hasfocus(20899)|control.hasfocus(20900)</visible>
+    </control>
+
+    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::HOVER MENU BACKGROUND:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->	
+
+    <control Style="HomeBasicFanart">
+      <description>Hover background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>hover_shutdown.png</texture>
+      <visible>string.equals(#selecteditem,#(string.format('{0} {1}',#selectedindex,L(1030))))+[control.hasfocus(8206555)|control.hasfocus(8106555)|control.hasfocus(8006555)|control.hasfocus(8306555)|control.hasfocus(8406555)]</visible>
+    </control>
+
+    <control Style="HomeBasicFanart">
+      <description>Hover background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>hover_exit.png</texture>
+      <visible>string.equals(#selecteditem,#(string.format('{0} {1}',#selectedindex,L(1057))))+[control.hasfocus(8206555)|control.hasfocus(8106555)|control.hasfocus(8006555)|control.hasfocus(8306555)|control.hasfocus(8406555)]</visible>
+    </control>
+
+    <control Style="HomeBasicFanart">
+      <description>Hover background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>hover_restart.png</texture>
+      <visible>string.equals(#selecteditem,#(string.format('{0} {1}',#selectedindex,L(1058))))+[control.hasfocus(8206555)|control.hasfocus(8106555)|control.hasfocus(8006555)|control.hasfocus(8306555)|control.hasfocus(8406555)]</visible>
+    </control>
+
+    <control Style="HomeBasicFanart">
+      <description>Hover background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>hover_suspend.png</texture>
+      <visible>string.equals(#selecteditem,#(string.format('{0} {1}',#selectedindex,L(1032))))+[control.hasfocus(8206555)|control.hasfocus(8106555)|control.hasfocus(8006555)|control.hasfocus(8306555)|control.hasfocus(8406555)]</visible>
+    </control>
+
+    <control Style="HomeBasicFanart">
+      <description>Hover background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>hover_hibernate.png</texture>
+      <visible>string.equals(#selecteditem,#(string.format('{0} {1}',#selectedindex,L(1049))))+[control.hasfocus(8206555)|control.hasfocus(8106555)|control.hasfocus(8006555)|control.hasfocus(8306555)|control.hasfocus(8406555)]</visible>
+    </control>
+
+    <control Style="HomeBasicFanart">
+      <description>Hover background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>hover_reboot.png</texture>
+      <visible>string.equals(#selecteditem,#(string.format('{0} {1}',#selectedindex,L(1031))))+[control.hasfocus(8206555)|control.hasfocus(8106555)|control.hasfocus(8006555)|control.hasfocus(8306555)|control.hasfocus(8406555)]</visible>
+    </control>
+
+    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::HOVER BACKGROUND DUMMY:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->	
+
+    <control>
+      <description>DUMMY HOVER VISIBLE</description>
+      <type>label</type>
+      <id>99266</id>
+      <label />
+      <!--visible>string.equals(#skin.basichome.background,FanartHandler)+[[control.isvisible(7010004)+control.isvisible(91919299)+[control.isvisible(91919297)|control.isvisible(91919298)]]|[control.isvisible(7010008)+control.isvisible(91919299)+[control.isvisible(91919297)|control.isvisible(91919298)]]|[control.isvisible(7010016)+control.isvisible(91919299)+[control.isvisible(91919297)|control.isvisible(91919298)]]|[control.isvisible(7010018)+control.isvisible(91919299)+[control.isvisible(91919297)|control.isvisible(91919298)]]|[control.isvisible(7010020)+control.isvisible(91919299)+[control.isvisible(91919297)|control.isvisible(91919298)]]|[[control.isvisible(7010012)|control.isvisible(7010021)]+control.isvisible(91919299)+[control.isvisible(91919297)|control.isvisible(91919298)]]|[[control.isvisible(75100000)|control.isvisible(75100001)]+control.isvisible(91919283)+[control.isvisible(91919281)|control.isvisible(91919282)]]|[control.isvisible(7013016)+control.isvisible(91919299)+[control.isvisible(91919297)|control.isvisible(91919298)]]|[control.hasfocus(91915991)|control.hasfocus(91915992)|control.hasfocus(91915993)]|[control.hasfocus(91919991)|control.hasfocus(91919992)|control.hasfocus(91919993)]|[control.hasfocus(91919994)|control.hasfocus(91919995)|control.hasfocus(91919996)]|[control.hasfocus(91919997)|control.hasfocus(91919998)|control.hasfocus(91919999)]|[control.hasfocus(91929928)|control.hasfocus(91929929)|control.hasfocus(91929930)]]</visible-->
+      <!--visible>[[control.isvisible(7010004)+control.isvisible(91919299)+[control.isvisible(91919297)|control.isvisible(91919298)]]|[control.isvisible(7010008)+control.isvisible(91919299)+[control.isvisible(91919297)|control.isvisible(91919298)]]|[control.isvisible(7010016)+control.isvisible(91919299)+[control.isvisible(91919297)|control.isvisible(91919298)]]|[control.isvisible(7010018)+control.isvisible(91919299)+[control.isvisible(91919297)|control.isvisible(91919298)]]|[control.isvisible(7010020)+control.isvisible(91919299)+[control.isvisible(91919297)|control.isvisible(91919298)]]|[[control.isvisible(7010012)|control.isvisible(7010021)]+control.isvisible(91919299)+[control.isvisible(91919297)|control.isvisible(91919298)]]|[[control.isvisible(75100000)|control.isvisible(75100001)]+control.isvisible(91919283)+[control.isvisible(91919281)|control.isvisible(91919282)]]|[control.isvisible(7013016)+control.isvisible(91919299)+[control.isvisible(91919297)|control.isvisible(91919298)]]|[control.hasfocus(91915991)|control.hasfocus(91915992)|control.hasfocus(91915993)]|[control.hasfocus(91919991)|control.hasfocus(91919992)|control.hasfocus(91919993)]|[control.hasfocus(91919994)|control.hasfocus(91919995)|control.hasfocus(91919996)]|[control.hasfocus(91919997)|control.hasfocus(91919998)|control.hasfocus(91919999)]|[control.hasfocus(91929928)|control.hasfocus(91929929)|control.hasfocus(91929930)]]</visible-->
+      <visible>[[control.isvisible(7010004)+[[control.isvisible(91919297)+control.hasthumb(91919297)]|[control.isvisible(91919298)+control.hasthumb(91919298)]]]|[control.isvisible(7010008)+[[control.isvisible(91919297)+control.hasthumb(91919297)]|[control.isvisible(91919298)+control.hasthumb(91919298)]]]|[control.isvisible(7010016)+[[control.isvisible(91919297)+control.hasthumb(91919297)]|[control.isvisible(91919298)+control.hasthumb(91919298)]]]|[control.isvisible(7010018)+[[control.isvisible(91919297)+control.hasthumb(91919297)]|[control.isvisible(91919298)+control.hasthumb(91919298)]]]|[control.isvisible(7010020)+[[control.isvisible(91919297)+control.hasthumb(91919297)]|[control.isvisible(91919298)+control.hasthumb(91919298)]]]|[control.isvisible(7013016)+[[control.isvisible(91919297)+control.hasthumb(91919297)]|[control.isvisible(91919298)+control.hasthumb(91919298)]]]|[[control.isvisible(7010012)|control.isvisible(7010021)]+[[control.isvisible(91919297)+control.hasthumb(91919297)]|[control.isvisible(91919298)+control.hasthumb(91919298)]]]|[[control.isvisible(75100000)|control.isvisible(75100001)]+[[control.isvisible(91919281)+control.hasthumb(91919281)]|[control.isvisible(91919282)+control.hasthumb(91919282)]]]|[control.hasfocus(91915991)|control.hasfocus(91915992)|control.hasfocus(91915993)]|[control.hasfocus(91919991)|control.hasfocus(91919992)|control.hasfocus(91919993)]|[control.hasfocus(91919994)|control.hasfocus(91919995)|control.hasfocus(91919996)]|[control.hasfocus(91919997)|control.hasfocus(91919998)|control.hasfocus(91919999)]|[control.hasfocus(91929928)|control.hasfocus(91929929)|control.hasfocus(91929930)]]</visible>
+    </control>
+
+  </controls>
+</window>
+
+

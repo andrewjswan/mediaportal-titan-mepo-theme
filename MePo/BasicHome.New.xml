@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<controls>  
+        
+  <!--            :: NEW INDICATORS ::            -->
+
+  <control>
+    <description>group element</description>
+    <type>group</type>
+    <dimColor>ffffffff</dimColor>
+    
+    <control Style="HomeButtonMenuNew">
+      <description>BasicHome 1 New</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>40</posX>
+      <posY>#home.button.posy</posY>
+      <visible>[control.isvisible(8011121)|control.isvisible(8011101)|control.isvisible(8011106)|control.isvisible(8011111)|control.isvisible(8011116)|control.isvisible(8011126)|control.isvisible(8011131)|control.isvisible(8011136)]</visible>
+      <!--animation effect="fade" time="250" condition="[control.isvisible(8011121)|control.isvisible(8011101)|control.isvisible(8011106)|control.isvisible(8011111)|control.isvisible(8011116)|control.isvisible(8011126)|control.isvisible(8011131)|control.isvisible(8011136)]">conditional</animation-->
+      <!--animation effect="fade" time="250">VisibleChange</animation-->
+      <animation effect="fade" start="0" end="100" time="300" delay="50">visible</animation>
+      <animation effect="fade" start="100" end="0" time="100" delay="0">hidden</animation>
+    </control>
+        
+    <control Style="HomeButtonMenuNew">
+      <description>BasicHome 2 New</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>410</posX>
+      <posY>#home.button.posy</posY>
+      <visible>[control.isvisible(8011122)|control.isvisible(8011102)|control.isvisible(8011107)|control.isvisible(8011112)|control.isvisible(8011117)|control.isvisible(8011127)|control.isvisible(8011132)|control.isvisible(8011137)]</visible>
+      <!--animation effect="fade" time="250" condition="[control.isvisible(8011122)|control.isvisible(8011102)|control.isvisible(8011107)|control.isvisible(8011112)|control.isvisible(8011117)|control.isvisible(8011127)|control.isvisible(8011132)|control.isvisible(8011137)]">conditional</animation-->
+      <!--animation effect="fade" time="250">VisibleChange</animation-->
+      <animation effect="fade" start="0" end="100" time="300" delay="50">visible</animation>
+      <animation effect="fade" start="100" end="0" time="100" delay="0">hidden</animation>
+    </control>
+    
+    <control Style="HomeButtonMenuNew">
+      <description>BasicHome 3 New</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>780</posX>
+      <posY>#home.button.posy</posY>
+      <visible>[control.isvisible(8011123)|control.isvisible(8011103)|control.isvisible(8011108)|control.isvisible(8011113)|control.isvisible(8011118)|control.isvisible(8011128)|control.isvisible(8011133)|control.isvisible(8011138)]</visible>
+      <!--animation effect="fade" time="250" condition="[control.isvisible(8011123)|control.isvisible(8011103)|control.isvisible(8011108)|control.isvisible(8011113)|control.isvisible(8011118)|control.isvisible(8011128)|control.isvisible(8011133)|control.isvisible(8011138)]">conditional</animation-->
+      <!--animation effect="fade" time="250">VisibleChange</animation-->
+      <animation effect="fade" start="0" end="100" time="300" delay="50">visible</animation>
+      <animation effect="fade" start="100" end="0" time="100" delay="0">hidden</animation>
+    </control>
+            
+    <control Style="HomeButtonMenuNew">
+      <description>BasicHome 4 New</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1150</posX>
+      <posY>#home.button.posy</posY>
+      <visible>[control.isvisible(8011124)|control.isvisible(8011104)|control.isvisible(8011109)|control.isvisible(8011114)|control.isvisible(8011119)|control.isvisible(8011129)|control.isvisible(8011134)|control.isvisible(8011139)]</visible>
+      <!--animation effect="fade" time="250" condition="[control.isvisible(8011124)|control.isvisible(8011104)|control.isvisible(8011109)|control.isvisible(8011114)|control.isvisible(8011119)|control.isvisible(8011129)|control.isvisible(8011134)|control.isvisible(8011139)]">conditional</animation-->
+      <!--animation effect="fade" time="250">VisibleChange</animation-->
+      <animation effect="fade" start="0" end="100" time="300" delay="50">visible</animation>
+      <animation effect="fade" start="100" end="0" time="100" delay="0">hidden</animation>
+    </control>
+      
+    <control Style="HomeButtonMenuNew">
+      <description>BasicHome 5 New</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1520</posX>
+      <posY>#home.button.posy</posY>
+      <visible>[control.isvisible(8011125)|control.isvisible(8011105)|control.isvisible(8011110)|control.isvisible(8011115)|control.isvisible(8011120)|control.isvisible(8011130)|control.isvisible(8011135)|control.isvisible(8011140)]</visible>
+      <!--animation effect="fade" time="250" condition="[control.isvisible(8011125)|control.isvisible(8011105)|control.isvisible(8011110)|control.isvisible(8011115)|control.isvisible(8011120)|control.isvisible(8011130)|control.isvisible(8011135)|control.isvisible(8011140)]">conditional</animation-->
+      <!--animation effect="fade" time="250">VisibleChange</animation-->
+      <animation effect="fade" start="0" end="100" time="300" delay="50">visible</animation>
+      <animation effect="fade" start="100" end="0" time="100" delay="0">hidden</animation>
+    </control>
+  </control>
+
+ </controls>
+</window>

@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <control>
+      <type>actiongroup</type>
+      <description>action menu</description>
+      <defaultcontrol>20800</defaultcontrol>
+      <onexit>50</onexit>
+      <buttonX>0</buttonX>
+      <buttonY>0</buttonY>
+      <buttonwidth>1</buttonwidth>
+      <buttonheight>1</buttonheight>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <width>800</width>
+      <height>800</height>
+      <dimColor>00ffffff</dimColor>
+
+      <control>
+        <type>label</type>
+        <id>208802</id>
+        <posX>7000</posX>
+        <posY>7000</posY>
+        <visible>control.hasfocus(20800)|control.hasfocus(20801)|control.hasfocus(20802)|control.hasfocus(20803)|control.hasfocus(20804)|control.hasfocus(20805)|control.hasfocus(20806)|control.hasfocus(20807)|control.hasfocus(20808)|control.hasfocus(20809)|control.hasfocus(20810)|control.hasfocus(20811)|control.hasfocus(20812)|control.hasfocus(20813)|control.hasfocus(20814)|control.hasfocus(20815)|control.hasfocus(20890)|control.hasfocus(20891)|control.hasfocus(20892)|control.hasfocus(20893)|control.hasfocus(20894)|control.hasfocus(20895)|control.hasfocus(20896)|control.hasfocus(20897)|control.hasfocus(20898)|control.hasfocus(20899)|control.hasfocus(20900)</visible>
+        <label />
+      </control>
+
+      <control>
+        <description>Background</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>40</posX>
+        <posY>190</posY>
+        <width>1845</width>
+        <height>624</height>
+        <texture>D_over1.png</texture>
+        <visible>control.isvisible(208802)</visible>
+      </control>
+      <control>
+        <description>Background</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>40</posX>
+        <posY>821</posY>
+        <width>1845</width>
+        <height>209</height>
+        <texture>Inf_gfx.png</texture>
+        <visible>control.isvisible(208802)</visible>
+      </control>
+
+      <control>
+        <description>Info</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>97</posX>
+        <posY>850</posY>
+        <width>1200</width>
+        <align>left</align>
+        <label>Quick skin settings...</label>
+        <font>font13</font>
+        <textcolor>eaeaea</textcolor>
+        <visible>control.isvisible(208802)</visible>
+      </control>
+
+      <control>
+        <description>group element</description>
+        <type>group</type>
+        <control>
+          <description>button group</description>
+          <type>group</type>
+          <posX>80</posX>
+          <posY>260</posY>
+          <!-- Remove and Gaps when buttons are not visible -->
+          <layout>TableLayout(1850, 3, 50, 0)</layout>
+          <visible allowhiddenfocus="true">control.isvisible(208802)</visible>
+
+          <!-- Row -->
+          <control Style="SettingsCheckButtonMedium">
+            <description>Backgrounds</description>
+            <type>menubutton</type>
+            <id>20800</id>
+            <width>550</width>
+            <height>50</height>
+            <mode>dialoglist</mode>
+            <onfocus>#(skin.setstring('#skin.hint.description','Set how many home pages you want to use 1-5'))</onfocus>
+            <dialogTitle>Number of home pages</dialogTitle>
+            <valueTextInButton>yes</valueTextInButton>
+            <valuePrefixText>Number of home pages: </valuePrefixText>
+            <onclick>#(skin.setstring('#skin.pages',#selectedlabel20800))</onclick>
+            <binding>#skin.pages</binding>
+            <subitems>
+              <subitem>one</subitem>
+              <subitem>two</subitem>
+              <subitem>three</subitem>
+              <subitem>four</subitem>
+              <subitem>five</subitem>
+            </subitems>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onup>20898</onup>
+            <onleft>#(cint(#skin.setnav))</onleft>
+            <ondown>20802</ondown>
+            <onright>20801</onright>
+          </control>
+          <control Style="SettingsCheckButtonMedium">
+            <description>Enable LatestMedia in homescreen</description>
+            <type>checkbutton</type>
+            <id>20801</id>
+            <label>Latest Media in Home</label>
+            <width>550</width>
+            <onfocus>#(skin.setstring('#skin.hint.description','Enable latest media items in homescreen'))</onfocus>
+            <selected>#(skin.hassetting('#skin.no.latestmedia'))</selected>
+            <onclick>#(skin.togglesetting('#skin.no.latestmedia'))#(skin.setbool('#skin.enable.latest.myVideo',#skin.no.latestmedia))#(skin.setbool('#skin.enable.latest.MovingPictures',#skin.no.latestmedia))#(skin.setbool('#skin.enable.latest.Series',#skin.no.latestmedia))#(skin.setbool('#skin.enable.latest.Music',#skin.no.latestmedia))#(skin.setbool('#skin.enable.latest.Pictures',#skin.no.latestmedia))#(skin.setbool('#skin.enable.latest.MvCentral',#skin.no.latestmedia))</onclick>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <visible>plugin.isenabled(Latest Media Handler)</visible>
+            <onup>20899</onup>
+            <onright>20809</onright>
+            <onleft>20800</onleft>
+            <ondown>20803</ondown>
+          </control>
+          <control Style="SettingsCheckButtonMedium">
+            <description>Enable LatestMedia Overview</description>
+            <type>checkbutton</type>
+            <id>20809</id>
+            <label>Latest Media Overview</label>
+            <width>550</width>
+            <onfocus>#(skin.setstring('#skin.hint.description','Enable latest media overview as default instead of latest media item information'))</onfocus>
+            <selected>#(skin.hassetting('#skin.latest.overview'))</selected>
+            <onclick>#(skin.togglesetting('#skin.latest.overview'))</onclick>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <visible>plugin.isenabled(Latest Media Handler)</visible>
+            <onup>20900</onup>
+            <onright>#(cint(#skin.setnav))</onright>
+            <onleft>20801</onleft>
+            <ondown>20804</ondown>
+          </control>
+
+          <!-- Row -->
+          <control Style="SettingsCheckButtonMedium">
+            <description>BasicHome option</description>
+            <type>menubutton</type>
+            <id>20802</id>
+            <width>550</width>
+            <height>50</height>
+            <mode>dialoglist</mode>
+            <dialogTitle>BasicHome buttons type</dialogTitle>
+            <onfocus>#(skin.setstring('#skin.hint.description','Set which type of buttons you want to display on BasicHome'))</onfocus>
+            <valueTextInButton>yes</valueTextInButton>
+            <valuePrefixText>Home Buttons type: </valuePrefixText>
+            <onclick>#(skin.setstring('#skin.home.button.type',#selectedlabel20802))</onclick>
+            <binding>#skin.home.button.type</binding>
+            <subitems>
+              <subitem>big</subitem>
+              <subitem>middle</subitem>
+              <subitem>small</subitem>
+            </subitems>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onup>20800</onup>
+            <onleft>#(cint(#skin.setnav))</onleft>
+            <ondown>20805</ondown>
+            <onright>20803</onright>
+          </control>
+          <control Style="SettingsCheckButtonMedium">
+            <description>tvguide rows</description>
+            <type>menubutton</type>
+            <id>20803</id>
+            <width>550</width>
+            <height>50</height>
+            <mode>dialoglist</mode>
+            <dialogTitle>Number of guide rows</dialogTitle>
+            <onfocus>#(skin.setstring('#skin.hint.description','Set how many tvguide rows you would like to see 7 or 12'))</onfocus>
+            <valueTextInButton>yes</valueTextInButton>
+            <valuePrefixText>Number of guide rows:</valuePrefixText>
+            <onclick>#(skin.setstring('#skin.tvguide.rows',#selectedlabel20803))</onclick>
+            <binding>#skin.tvguide.rows</binding>
+            <subitems>
+              <subitem> 7</subitem>
+              <subitem> 11</subitem>
+            </subitems>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onup>20801</onup>
+            <onleft>20802</onleft>
+            <ondown>20806</ondown>
+            <onright>20804</onright>
+          </control>
+          <control Style="SettingsCheckButtonMedium">
+            <description>Backgrounds</description>
+            <type>menubutton</type>
+            <id>20804</id>
+            <width>550</width>
+            <height>50</height>
+            <mode>dialoglist</mode>
+            <onfocus>#(skin.setstring('#skin.hint.description','Switch between a light or dark background'))</onfocus>
+            <dialogTitle>Background Colour</dialogTitle>
+            <valueTextInButton>yes</valueTextInButton>
+            <valuePrefixText>Background colour: </valuePrefixText>
+            <onclick>#(skin.setstring('#background.colour',#selectedlabel20804))</onclick>
+            <binding>#background.colour</binding>
+            <subitems>
+              <subitem>default</subitem>
+              <subitem>blue</subitem>
+            </subitems>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onup>20809</onup>
+            <onleft>20803</onleft>
+            <ondown>20807</ondown>
+            <onright>#(cint(#skin.setnav))</onright>
+          </control>
+
+          <!-- Row -->
+          <control Style="SettingsCheckButtonMedium">
+            <description>Enable weather in homescreen</description>
+            <type>checkbutton</type>
+            <id>20805</id>
+            <label>Enable Weather</label>
+            <width>550</width>
+            <onfocus>#(skin.setstring('#skin.hint.description','Switch weather on or off for all screens'))</onfocus>
+            <selected>#(skin.hassetting('#skin.weather.home'))</selected>
+            <onclick>#(skin.togglesetting('#skin.weather.home'))</onclick>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <visible>plugin.isenabled(World Weather Lite)|plugin.isenabled(World Weather)</visible>
+            <onup>20802</onup>
+            <onright>20806</onright>
+            <onleft>#(cint(#skin.setnav))</onleft>
+            <ondown>20808</ondown>
+          </control>
+          <control Style="SettingsCheckButtonMedium">
+            <description>Time</description>
+            <type>checkbutton</type>
+            <id>20806</id>
+            <label>24hr time format</label>
+            <width>550</width>
+            <onfocus>#(skin.setstring('#skin.hint.description','Choose between 12 or 24 hour display for clock in top right'))</onfocus>
+            <selected>#(skin.hassetting('#Dtimeformat'))</selected>
+            <onclick>#(skin.togglesetting('#Dtimeformat'))</onclick>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onup>20803</onup>
+            <onright>20807</onright>
+            <onleft>20805</onleft>
+            <ondown>20810</ondown>
+          </control>
+          <control Style="SettingsCheckButtonMedium">
+            <description>Backgrounds</description>
+            <type>checkbutton</type>
+            <id>20807</id>
+            <label>Enable weather forecast</label>
+            <width>550</width>
+            <onfocus>#(skin.setstring('#skin.hint.description','Enable weather forecast when weather tile has focus'))</onfocus>
+            <selected>#(skin.hassetting('#skin.no.weather'))</selected>
+            <onclick>#(skin.togglesetting('#skin.no.weather'))</onclick>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <visible>[plugin.isenabled(World Weather Lite)|plugin.isenabled(World Weather)]</visible>
+            <onup>20804</onup>
+            <onleft>20806</onleft>
+            <ondown>20811</ondown>
+            <onright>#(cint(#skin.setnav))</onright>
+          </control>
+
+          <!-- Row -->
+          <control Style="SettingsCheckButtonMedium">
+            <description>Enable RSS in homescreen</description>
+            <type>checkbutton</type>
+            <id>20808</id>
+            <label>Replace page indicators with RSS</label>
+            <width>550</width>
+            <onfocus>#(skin.setstring('#skin.hint.description','Use RSS feed instead of seeing number of pages indicator in the bottom area'))</onfocus>
+            <selected>#(skin.hassetting('#skin.rss.info'))</selected>
+            <onclick>#(skin.togglesetting('#skin.rss.info'))</onclick>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onup>20805</onup>
+            <onright>20810</onright>
+            <onleft>#(cint(#skin.setnav))</onleft>
+            <ondown>20812</ondown>
+            <visible>plugin.isenabled(InfoService)|plugin.isenabled(World News)</visible>
+          </control>
+          <control Style="SettingsCheckButtonMedium">
+            <description>Enable custom tiles</description>
+            <type>menubutton</type>
+            <id>20810</id>
+            <width>550</width>
+            <height>50</height>
+            <mode>dialoglist</mode>
+            <onfocus>#(skin.setstring('#skin.hint.description','Choose yes to enable custom tile images instead of defaults'))</onfocus>
+            <dialogTitle>Set a custom tile image..</dialogTitle>
+            <valueTextInButton>yes</valueTextInButton>
+            <valuePrefixText>Custom tile images: </valuePrefixText>
+            <onclick>#(skin.setstring('#skin.manualimg',#selectedlabel20810))</onclick>
+            <binding>#skin.manualimg</binding>
+            <subitems>
+              <subitem>yes</subitem>
+              <subitem>no</subitem>
+            </subitems>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onleft>20808</onleft>
+            <onup>20806</onup>
+            <onright>20811</onright>
+            <ondown>20813</ondown>
+          </control>
+          <control Style="SettingsCheckButtonMedium">
+            <description>Enable Info logos</description>
+            <type>checkbutton</type>
+            <id>20811</id>
+            <label>Enable TV Info logos</label>
+            <width>550</width>
+            <onfocus>#(skin.setstring('#skin.hint.description','Enable info logos in tvosd description'))</onfocus>
+            <selected>#(skin.hassetting('#skin.osd.logos'))</selected>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onclick>#(skin.togglesetting('#skin.osd.logos'))</onclick>
+            <visible>false</visible>
+            <onup>20807</onup>
+            <onright>#(cint(#skin.setnav))</onright>
+            <onleft>20810</onleft>
+            <ondown>20814</ondown>
+          </control>
+
+          <!-- Row -->
+          <control Style="SettingsCheckButtonMedium">
+            <description>Enable Info logos</description>
+            <type>checkbutton</type>
+            <id>20812</id>
+            <label>Enable Movie/Series Info logos</label>
+            <width>550</width>
+            <onfocus>#(skin.setstring('#skin.hint.description','Enable info logos in movie/series osd description'))</onfocus>
+            <selected>#(skin.hassetting('#skin.osd.logosvideo'))</selected>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onclick>#(skin.togglesetting('#skin.osd.logosvideo'))</onclick>
+            <visible>false</visible>
+            <onup>20808</onup>
+            <onright>20813</onright>
+            <onleft>#(cint(#skin.setnav))</onleft>
+            <ondown>20815</ondown>
+          </control>
+          <control Style="SettingsCheckButtonMedium">
+            <description>fanart option</description>
+            <type>menubutton</type>
+            <id>20813</id>
+            <width>550</width>
+            <height>50</height>
+            <mode>dialoglist</mode>
+            <dialogTitle>OV Latest Display type</dialogTitle>
+            <onfocus>#(skin.setstring('#skin.hint.description','Choose how to display OnlineVideos latest info'))</onfocus>
+            <valueTextInButton>yes</valueTextInButton>
+            <valuePrefixText>OV Latest Display type: </valuePrefixText>
+            <onclick>#(skin.setstring('#skin.latestOV',#selectedlabel20813))</onclick>
+            <binding>#skin.latestOV</binding>
+            <subitems>
+              <subitem>cover</subitem>
+              <subitem>thumb</subitem>
+              <subitem>square</subitem>
+              <subitem>icon</subitem>
+            </subitems>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <visible>plugin.isenabled(OnlineVideos)</visible>
+            <onup>20810</onup>
+            <onleft>20812</onleft>
+            <ondown>20890</ondown>
+            <onright>20814</onright>
+          </control>
+          <control Style="SettingsCheckButtonMedium">
+            <description>Enable full day and month</description>
+            <type>checkbutton</type>
+            <id>20814</id>
+            <label>Disable short day and month</label>
+            <width>550</width>
+            <onfocus>#(skin.setstring('#skin.hint.description','Disable the short display of day and month in top right'))</onfocus>
+            <selected>#(skin.hassetting('#skin.fullday'))</selected>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onclick>#(skin.togglesetting('#skin.fullday'))</onclick>
+            <onup>20811</onup>
+            <onright>#(cint(#skin.setnav))</onright>
+            <onleft>20813</onleft>
+            <ondown>20891</ondown>
+          </control>
+
+          <!-- Row -->
+          <control Style="SettingsCheckButtonMedium">
+            <description>fanart option</description>
+            <type>menubutton</type>
+            <id>20815</id>
+            <width>550</width>
+            <height>50</height>
+            <mode>dialoglist</mode>
+            <dialogTitle>Music Fanart</dialogTitle>
+            <onfocus>#(skin.setstring('#skin.hint.description','Where would you like fanart in music ?'))</onfocus>
+            <valueTextInButton>yes</valueTextInButton>
+            <valuePrefixText>Music Fanart: </valuePrefixText>
+            <onclick>#(skin.setstring('#Music.fanart.enable',#selectedlabel20815))</onclick>
+            <binding>#Music.fanart.enable</binding>
+            <subitems>
+              <subitem>All Screens</subitem>
+              <subitem>Now Playing only</subitem>
+            </subitems>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onup>20812</onup>
+            <onleft>#(cint(#skin.setnav))</onleft>
+            <ondown>20892</ondown>
+            <onright>20890</onright>
+          </control>
+          <control Style="SettingsCheckButtonMedium">
+            <description>Enable latest myVideo in homescreen</description>
+            <type>checkbutton</type>
+            <id>20890</id>
+            <label>Enable latest Videos in Home</label>
+            <width>550</width>
+            <onfocus>#(skin.setstring('#skin.hint.description','Enable latest Videos media items in homescreen'))</onfocus>
+            <selected>#(skin.hassetting('#skin.enable.latest.myVideo'))</selected>
+            <onclick>#(skin.togglesetting('#skin.enable.latest.myVideo'))</onclick>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onup>20813</onup>
+            <onright>20891</onright>
+            <onleft>20815</onleft>
+            <ondown>20893</ondown>
+            <visible>plugin.isenabled(Latest Media Handler)</visible>
+          </control>
+          <control Style="SettingsCheckButtonMedium">
+            <description>Enable latest MovingPictures in homescreen</description>
+            <type>checkbutton</type>
+            <id>20891</id>
+            <label>Enable latest MovingPictures in Home</label>
+            <width>550</width>
+            <onfocus>#(skin.setstring('#skin.hint.description','Enable latest MovingPictures media items in homescreen'))</onfocus>
+            <selected>#(skin.hassetting('#skin.enable.latest.MovingPictures'))</selected>
+            <onclick>#(skin.togglesetting('#skin.enable.latest.MovingPictures'))</onclick>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onup>20814</onup>
+            <onright>#(cint(#skin.setnav))</onright>
+            <onleft>20890</onleft>
+            <ondown>20894</ondown>
+            <visible>plugin.isenabled(Latest Media Handler) + plugin.isenabled(Moving Pictures)</visible>
+          </control>
+
+          <!-- Row -->
+          <control Style="SettingsCheckButtonMedium">
+            <description>Enable latest TVSeries in homescreen</description>
+            <type>checkbutton</type>
+            <id>20892</id>
+            <label>Enable latest TVSeries in Home</label>
+            <width>550</width>
+            <onfocus>#(skin.setstring('#skin.hint.description','Enable latest TVSeries media items in homescreen'))</onfocus>
+            <selected>#(skin.hassetting('#skin.enable.latest.Series'))</selected>
+            <onclick>#(skin.togglesetting('#skin.enable.latest.Series'))</onclick>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onup>20815</onup>
+            <onright>20893</onright>
+            <onleft>#(cint(#skin.setnav))</onleft>
+            <ondown>20895</ondown>
+            <visible>plugin.isenabled(Latest Media Handler) + plugin.isenabled(MP-TV Series)</visible>
+          </control>
+          <control Style="SettingsCheckButtonMedium">
+            <description>Enable latest Music in homescreen</description>
+            <type>checkbutton</type>
+            <id>20893</id>
+            <label>Enable latest Music in Home</label>
+            <width>550</width>
+            <onfocus>#(skin.setstring('#skin.hint.description','Enable latest Music media items in homescreen'))</onfocus>
+            <selected>#(skin.hassetting('#skin.enable.latest.Music'))</selected>
+            <onclick>#(skin.togglesetting('#skin.enable.latest.Music'))</onclick>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onup>20890</onup>
+            <onright>20894</onright>
+            <onleft>20892</onleft>
+            <ondown>20896</ondown>
+            <visible>plugin.isenabled(Latest Media Handler)</visible>
+          </control>
+          <control Style="SettingsCheckButtonMedium">
+            <description>Enable latest Pictures in homescreen</description>
+            <type>checkbutton</type>
+            <id>20894</id>
+            <label>Enable latest Pictures in Home</label>
+            <width>550</width>
+            <onfocus>#(skin.setstring('#skin.hint.description','Enable latest Pictures media items in homescreen'))</onfocus>
+            <selected>#(skin.hassetting('#skin.enable.latest.Pictures'))</selected>
+            <onclick>#(skin.togglesetting('#skin.enable.latest.Pictures'))</onclick>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onup>20891</onup>
+            <onright>#(cint(#skin.setnav))</onright>
+            <onleft>20893</onleft>
+            <ondown>20897</ondown>
+            <visible>plugin.isenabled(Latest Media Handler)</visible>
+          </control>
+
+          <!-- Row -->
+          <control Style="SettingsCheckButtonMedium">
+            <description>Enable Trakt in homescreen</description>
+            <type>checkbutton</type>
+            <id>20895</id>
+            <label>Enable Trakt in Home</label>
+            <width>550</width>
+            <onfocus>#(skin.setstring('#skin.hint.description','Enable Trakt dashboard items in homescreen'))</onfocus>
+            <selected>#(skin.hassetting('#skin.enable.latest.Trakt'))</selected>
+            <onclick>#(skin.togglesetting('#skin.enable.latest.Trakt'))</onclick>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onup>20892</onup>
+            <onright>20896</onright>
+            <onleft>#(cint(#skin.setnav))</onleft>
+            <ondown>20898</ondown>
+            <visible>plugin.isenabled(Trakt)</visible>
+          </control>
+          <control Style="SettingsCheckButtonMedium">
+            <description>Enable latest OnlineVideos in homescreen</description>
+            <type>checkbutton</type>
+            <id>20896</id>
+            <label>Enable latest OnlineVideos in Home</label>
+            <width>550</width>
+            <onfocus>#(skin.setstring('#skin.hint.description','Enable latest OnlineVideos media items in homescreen'))</onfocus>
+            <selected>#(skin.hassetting('#skin.enable.latest.OnlineVideos'))</selected>
+            <onclick>#(skin.togglesetting('#skin.enable.latest.OnlineVideos'))</onclick>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onup>20893</onup>
+            <onright>20897</onright>
+            <onleft>20895</onleft>
+            <ondown>20899</ondown>
+            <visible>plugin.isenabled(OnlineVideos)</visible>
+          </control>
+          <control Style="SettingsCheckButtonMedium">
+            <description>Enable latest TVRecording in homescreen</description>
+            <type>checkbutton</type>
+            <id>20897</id>
+            <label>Enable latest TVRecording in Home</label>
+            <width>550</width>
+            <onfocus>#(skin.setstring('#skin.hint.description','Enable latest TVRecording media items in homescreen'))</onfocus>
+            <selected>#(skin.hassetting('#skin.enable.latest.TV'))</selected>
+            <onclick>#(skin.togglesetting('#skin.enable.latest.TV'))</onclick>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onup>20894</onup>
+            <onright>#(cint(#skin.setnav))</onright>
+            <onleft>20896</onleft>
+            <ondown>20900</ondown>
+            <visible>plugin.isenabled(Latest Media Handler)</visible>
+          </control>
+
+          <!-- Row -->
+          <control Style="SettingsCheckButtonMedium">
+            <description>Enable latest MvCentral in homescreen</description>
+            <type>checkbutton</type>
+            <id>20898</id>
+            <label>Enable latest MvCentral in Home</label>
+            <width>550</width>
+            <onfocus>#(skin.setstring('#skin.hint.description','Enable latest MvCentral media items in homescreen'))</onfocus>
+            <selected>#(skin.hassetting('#skin.enable.latest.MvCentral'))</selected>
+            <onclick>#(skin.togglesetting('#skin.enable.latest.MvCentral'))</onclick>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onup>20895</onup>
+            <onright>20899</onright>
+            <ondown>20800</ondown>
+            <onleft>#(cint(#skin.setnav))</onleft>
+            <visible>plugin.isenabled(Latest Media Handler)</visible>
+          </control>
+          <control Style="SettingsCheckButtonMedium">
+            <description>Enable latest New indicator in homescreen</description>
+            <type>checkbutton</type>
+            <id>20899</id>
+            <label>Enable latest New indicator in Home</label>
+            <width>550</width>
+            <onfocus>#(skin.setstring('#skin.hint.description','Enable latest New indicator in homescreen'))</onfocus>
+            <selected>#(skin.hassetting('#skin.enable.latest.New'))</selected>
+            <onclick>#(skin.togglesetting('#skin.enable.latest.New'))</onclick>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onup>20895</onup>
+            <onright>20900</onright>
+            <onleft>20898</onleft>
+            <ondown>20801</ondown>
+            <visible>plugin.isenabled(Latest Media Handler)</visible>
+          </control>
+          <control Style="SettingsCheckButtonMedium">
+            <description>Enable Hover</description>
+            <type>checkbutton</type>
+            <id>20900</id>
+            <label>Enable Hover</label>
+            <width>550</width>
+            <onfocus>#(skin.setstring('#skin.hint.description','Enable Hover pictures'))</onfocus>
+            <selected>#(skin.hassetting('#skin.background.useHover'))</selected>
+            <onclick>#(skin.togglesetting('#skin.background.useHover'))</onclick>
+            <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
+            <onup>20897</onup>
+            <onright>#(cint(#skin.setnav))</onright>
+            <onleft>20899</onleft>
+            <ondown>20809</ondown>
+          </control>
+        </control>
+      </control>
+
+      <!-- Information on settings -->
+
+      <control>
+        <description>Information</description>
+        <type>textbox</type>
+        <id>0</id>
+        <posX>97</posX>
+        <posY>900</posY>
+        <width>1700</width>
+        <height>125</height>
+        <align>left</align>
+        <label>#skin.hint.description</label>
+        <font>font13</font>
+        <textcolor>eaeaea</textcolor>
+        <visible>control.isvisible(208802)</visible>
+      </control>
+    </control>
+  </controls>
+</window>

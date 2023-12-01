@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+  
+    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::MOVPICS FANARTS:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->	
+	
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.movingpicture.latest1.fanart</texture>
+	  <visible>control.hasfocus(91919991)</visible>
+    </control>	
+	
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.movingpicture.latest2.fanart</texture>
+	  <visible>control.hasfocus(91919992)</visible>
+    </control>	
+
+ 	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.movingpicture.latest3.fanart</texture>
+	  <visible>control.hasfocus(91919993)</visible>
+    </control>	
+
+
+    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::TVSERIES FANARTS:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->	
+	
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.tvseries.latest1.fanart</texture>
+	  <visible>control.hasfocus(91919994)</visible>
+    </control>	
+	
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.tvseries.latest2.fanart</texture>
+	  <visible>control.hasfocus(91919995)</visible>
+    </control>	
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.tvseries.latest3.fanart</texture>
+	  <visible>control.hasfocus(91919996)</visible>
+    </control>		
+	
+
+    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::MYVIDEOS FANARTS:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->	
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.myvideo.latest1.fanart</texture>
+	  <visible>control.hasfocus(91915991)</visible>
+    </control>		
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.myvideo.latest2.fanart</texture>
+	  <visible>control.hasfocus(91915992)</visible>
+    </control>		
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.myvideo.latest3.fanart</texture>
+	  <visible>control.hasfocus(91915993)</visible>
+    </control>	
+
+
+    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::MYMUSIC FANARTS:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->	
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.music.latest1.fanart</texture>
+	  <visible>control.hasfocus(91919997)</visible>
+    </control>		
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.music.latest2.fanart</texture>
+	  <visible>control.hasfocus(91919998)</visible>
+    </control>		
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.music.latest3.fanart</texture>
+	  <visible>control.hasfocus(91919999)</visible>
+    </control>		
+	
+    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::MVCENTRAL FANARTS:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->	
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.mvcentral.latest1.fanart</texture>
+	  <visible>control.hasfocus(91929928)</visible>
+    </control>		
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.mvcentral.latest2.fanart</texture>
+	  <visible>control.hasfocus(91929929)</visible>
+    </control>		
+
+	<control Style="HomeBasicFanart">
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#latestMediaHandler.mvcentral.latest3.fanart</texture>
+	  <visible>control.hasfocus(91929930)</visible>
+    </control>		
+	
+    <!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::PLAY BACKGROUND IMAGE:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->	
+  
+    <control Style="HomeBasicFanart">
+      <description>FANART IMAGE 1</description>
+      <id>897688</id>
+      <type>image</type>
+      <texture>#fanarthandler.music.backdrop1.play</texture>
+      <visible>control.isvisible(91919295)+control.isvisible(91919294)</visible>
+    </control>
+
+    <control Style="HomeBasicFanart">
+      <description>FANART IMAGE 2</description>
+      <id>897689</id>
+      <type>image</type>
+      <texture>#fanarthandler.music.backdrop2.play</texture>
+      <visible>control.isvisible(91919296)+control.isvisible(91919294)</visible>
+    </control>
+  
+  </controls>
+</window>
+
+
