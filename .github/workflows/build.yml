@@ -69,7 +69,7 @@ jobs:
         with:
           name: MePo Theme - MPE1
           path: |
-            ${{ github.workspace }}\builds\MePoTheme.Titan-*.mpe1
+            ${{ github.workspace }}\build\MePoTheme.Titan-*.mpe1
           if-no-files-found: error
 
       - name: Upload Artifact / MPE XML
