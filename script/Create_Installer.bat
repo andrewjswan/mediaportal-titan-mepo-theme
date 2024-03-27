@@ -23,5 +23,11 @@ SET version=%version: =%
 :: Set version
 SET version=5.0.0.%version%
 
+:: Temp xmp2 file
+copy MePoTheme.xmp2 MePoThemeTemp.xmp2
+
 :: Build MPE1
-"%PROGS%\Team MediaPortal\MediaPortal\MPEMaker.exe" "MePoTheme.xmp2" /B /V=%version% /UpdateXML
+"%PROGS%\Team MediaPortal\MediaPortal\MPEMaker.exe" "MePoThemeTemp.xmp2" /B /V=%version% /UpdateXML
+
+:: Cleanup
+del MePoThemeTemp.xmp2
