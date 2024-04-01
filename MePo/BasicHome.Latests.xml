@@ -409,17 +409,17 @@
         <id>91919991</id>
         <posX>56</posX>
         <posY>#home.latest.play.posy</posY>
-        <width>50</width>
-        <height>50</height>
-        <textureFocus>play_btn_white.png</textureFocus>
-        <textureNoFocus>play_btn_white.png</textureNoFocus>
+        <width>#home.latest.play.width</width>
+        <height>#home.latest.play.height</height>
+        <textureFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureFocus>
+        <textureNoFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureNoFocus>
         <label />
         <onleft>91919991</onleft>
         <onright>91919992</onright>
         <onup>2</onup>
         <ondown>#skin.currentTile</ondown>
         <font>font12</font>
-        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false">Visible</animation>
+        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false" condition="string.equals(#skin.home.latest.type,small)">Visible</animation>
         <animation effect="fade" time="350" delay="2000" reversible="false" condition="control.isvisible(010004)">conditional</animation>
         <visible allowhiddenfocus="true">control.hasfocus(91919991)</visible>
       </control>
@@ -429,17 +429,17 @@
         <id>91919992</id>
         <posX>193</posX>
         <posY>#home.latest.play.posy</posY>
-        <width>50</width>
-        <height>50</height>
-        <textureFocus>play_btn_white.png</textureFocus>
-        <textureNoFocus>play_btn_white.png</textureNoFocus>
+        <width>#home.latest.play.width</width>
+        <height>#home.latest.play.height</height>
+        <textureFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureFocus>
+        <textureNoFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureNoFocus>
         <label />
         <onleft>91919991</onleft>
         <onright>91919993</onright>
         <onup>2</onup>
         <ondown>#skin.currentTile</ondown>
         <font>font12</font>
-        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false">Visible</animation>
+        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false" condition="string.equals(#skin.home.latest.type,small)">Visible</animation>
         <animation effect="fade" time="350" delay="2000" reversible="false" condition="control.isvisible(010004)">conditional</animation>
         <visible allowhiddenfocus="true">control.hasfocus(91919992)</visible>
       </control>
@@ -449,17 +449,17 @@
         <id>91919993</id>
         <posX>330</posX>
         <posY>#home.latest.play.posy</posY>
-        <width>50</width>
-        <height>50</height>
-        <textureFocus>play_btn_white.png</textureFocus>
-        <textureNoFocus>play_btn_white.png</textureNoFocus>
+        <width>#home.latest.play.width</width>
+        <height>#home.latest.play.height</height>
+        <textureFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureFocus>
+        <textureNoFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureNoFocus>
         <label />
         <onleft>91919992</onleft>
         <onright>91919993</onright>
         <onup>2</onup>
         <ondown>#skin.currentTile</ondown>
         <font>font12</font>
-        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false">Visible</animation>
+        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false" condition="string.equals(#skin.home.latest.type,small)">Visible</animation>
         <animation effect="fade" time="350" delay="2000" reversible="false" condition="control.isvisible(010004)">conditional</animation>
         <visible allowhiddenfocus="true">control.hasfocus(91919993)</visible>
       </control>
@@ -863,17 +863,17 @@
         <id>91919994</id>
         <posX>56</posX>
         <posY>#home.latest.play.posy</posY>
-        <width>50</width>
-        <height>50</height>
-        <textureFocus>play_btn_white.png</textureFocus>
-        <textureNoFocus>play_btn_white.png</textureNoFocus>
+        <width>#home.latest.play.width</width>
+        <height>#home.latest.play.height</height>
+        <textureFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureFocus>
+        <textureNoFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureNoFocus>
         <label />
         <onleft>91919994</onleft>
         <onright>91919995</onright>
         <onup>2</onup>
         <ondown>#skin.currentTile</ondown>
         <font>font12</font>
-        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false">Visible</animation>
+        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false" condition="string.equals(#skin.home.latest.type,small)">Visible</animation>
         <animation effect="fade" time="350" delay="2000" reversible="false" condition="control.isvisible(010008)">conditional</animation>
         <visible allowhiddenfocus="true">control.hasfocus(91919994)</visible>
       </control>
@@ -883,17 +883,17 @@
         <id>91919995</id>
         <posX>193</posX>
         <posY>#home.latest.play.posy</posY>
-        <width>50</width>
-        <height>50</height>
-        <textureFocus>play_btn_white.png</textureFocus>
-        <textureNoFocus>play_btn_white.png</textureNoFocus>
+        <width>#home.latest.play.width</width>
+        <height>#home.latest.play.height</height>
+        <textureFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureFocus>
+        <textureNoFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureNoFocus>
         <label />
         <onleft>91919994</onleft>
         <onright>91919996</onright>
         <onup>2</onup>
         <ondown>#skin.currentTile</ondown>
         <font>font12</font>
-        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false">Visible</animation>
+        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false" condition="string.equals(#skin.home.latest.type,small)">Visible</animation>
         <animation effect="fade" time="350" delay="2000" reversible="false" condition="control.isvisible(010008)">conditional</animation>
         <visible allowhiddenfocus="true">control.hasfocus(91919995)</visible>
       </control>
@@ -903,17 +903,17 @@
         <id>91919996</id>
         <posX>330</posX>
         <posY>#home.latest.play.posy</posY>
-        <width>50</width>
-        <height>50</height>
-        <textureFocus>play_btn_white.png</textureFocus>
-        <textureNoFocus>play_btn_white.png</textureNoFocus>
+        <width>#home.latest.play.width</width>
+        <height>#home.latest.play.height</height>
+        <textureFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureFocus>
+        <textureNoFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureNoFocus>
         <label />
         <onleft>91919995</onleft>
         <onright>91919996</onright>
         <onup>2</onup>
         <ondown>#skin.currentTile</ondown>
         <font>font12</font>
-        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false">Visible</animation>
+        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false" condition="string.equals(#skin.home.latest.type,small)">Visible</animation>
         <animation effect="fade" time="350" delay="2000" reversible="false" condition="control.isvisible(010008)">conditional</animation>
         <visible allowhiddenfocus="true">control.hasfocus(91919996)</visible>
       </control>
@@ -1201,17 +1201,17 @@
         <id>91919984</id>
         <posX>56</posX>
         <posY>#home.latest.play.posy</posY>
-        <width>50</width>
-        <height>50</height>
-        <textureFocus>play_btn_white.png</textureFocus>
-        <textureNoFocus>play_btn_white.png</textureNoFocus>
+        <width>#home.latest.play.width</width>
+        <height>#home.latest.play.height</height>
+        <textureFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureFocus>
+        <textureNoFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureNoFocus>
         <label />
         <onleft>91919984</onleft>
         <onright>91919985</onright>
         <onup>2</onup>
         <ondown>#skin.currentTile</ondown>
         <font>font12</font>
-        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false">Visible</animation>
+        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false" condition="string.equals(#skin.home.latest.type,small)">Visible</animation>
         <animation effect="fade" time="350" delay="2000" reversible="false" condition="control.isvisible(010012)">conditional</animation>
         <visible allowhiddenfocus="true">control.hasfocus(91919984)</visible>
       </control>
@@ -1221,17 +1221,17 @@
         <id>91919985</id>
         <posX>334</posX>
         <posY>#home.latest.play.posy</posY>
-        <width>50</width>
-        <height>50</height>
-        <textureFocus>play_btn_white.png</textureFocus>
-        <textureNoFocus>play_btn_white.png</textureNoFocus>
+        <width>#home.latest.play.width</width>
+        <height>#home.latest.play.height</height>
+        <textureFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureFocus>
+        <textureNoFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureNoFocus>
         <label />
         <onleft>91919984</onleft>
         <onright>91919985</onright>
         <onup>2</onup>
         <ondown>#skin.currentTile</ondown>
         <font>font12</font>
-        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false">Visible</animation>
+        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false" condition="string.equals(#skin.home.latest.type,small)">Visible</animation>
         <animation effect="fade" time="350" delay="2000" reversible="false" condition="control.isvisible(010012)">conditional</animation>
         <visible allowhiddenfocus="true">control.hasfocus(91919985)</visible>
       </control>
@@ -1633,17 +1633,17 @@
         <id>91919997</id>
         <posX>56</posX>
         <posY>#home.latest.play.posy</posY>
-        <width>50</width>
-        <height>50</height>
-        <textureFocus>play_btn_white.png</textureFocus>
-        <textureNoFocus>play_btn_white.png</textureNoFocus>
+        <width>#home.latest.play.width</width>
+        <height>#home.latest.play.height</height>
+        <textureFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureFocus>
+        <textureNoFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureNoFocus>
         <label />
         <onleft>91919997</onleft>
         <onright>91919998</onright>
         <onup>2</onup>
         <ondown>#skin.currentTile</ondown>
         <font>font12</font>
-        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false">Visible</animation>
+        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false" condition="string.equals(#skin.home.latest.type,small)">Visible</animation>
         <animation effect="fade" time="350" delay="2000" reversible="false" condition="control.isvisible(010016)">conditional</animation>
         <visible allowhiddenfocus="true">control.hasfocus(91919997)</visible>
       </control>
@@ -1653,17 +1653,17 @@
         <id>91919998</id>
         <posX>246</posX>
         <posY>#home.latest.play.posy</posY>
-        <width>50</width>
-        <height>50</height>
-        <textureFocus>play_btn_white.png</textureFocus>
-        <textureNoFocus>play_btn_white.png</textureNoFocus>
+        <width>#home.latest.play.width</width>
+        <height>#home.latest.play.height</height>
+        <textureFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureFocus>
+        <textureNoFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureNoFocus>
         <label />
         <onleft>91919997</onleft>
         <onright>91919999</onright>
         <onup>2</onup>
         <ondown>#skin.currentTile</ondown>
         <font>font12</font>
-        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false">Visible</animation>
+        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false" condition="string.equals(#skin.home.latest.type,small)">Visible</animation>
         <animation effect="fade" time="350" delay="2000" reversible="false" condition="control.isvisible(010016)">conditional</animation>
         <visible allowhiddenfocus="true">control.hasfocus(91919998)</visible>
       </control>
@@ -1673,17 +1673,17 @@
         <id>91919999</id>
         <posX>436</posX>
         <posY>#home.latest.play.posy</posY>
-        <width>50</width>
-        <height>50</height>
-        <textureFocus>play_btn_white.png</textureFocus>
-        <textureNoFocus>play_btn_white.png</textureNoFocus>
+        <width>#home.latest.play.width</width>
+        <height>#home.latest.play.height</height>
+        <textureFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureFocus>
+        <textureNoFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureNoFocus>
         <label />
         <onleft>91919998</onleft>
         <onright>91919999</onright>
         <onup>2</onup>
         <ondown>#skin.currentTile</ondown>
         <font>font12</font>
-        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false">Visible</animation>
+        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false" condition="string.equals(#skin.home.latest.type,small)">Visible</animation>
         <animation effect="fade" time="350" delay="2000" reversible="false" condition="control.isvisible(010016)">conditional</animation>
         <visible allowhiddenfocus="true">control.hasfocus(91919999)</visible>
       </control>
@@ -2086,17 +2086,17 @@
         <id>91915991</id>
         <posX>56</posX>
         <posY>#home.latest.play.posy</posY>
-        <width>50</width>
-        <height>50</height>
-        <textureFocus>play_btn_white.png</textureFocus>
-        <textureNoFocus>play_btn_white.png</textureNoFocus>
+        <width>#home.latest.play.width</width>
+        <height>#home.latest.play.height</height>
+        <textureFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureFocus>
+        <textureNoFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureNoFocus>
         <label />
         <onleft>91915991</onleft>
         <onright>91915992</onright>
         <onup>2</onup>
         <ondown>#skin.currentTile</ondown>
         <font>font12</font>
-        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false">Visible</animation>
+        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false" condition="string.equals(#skin.home.latest.type,small)">Visible</animation>
         <animation effect="fade" time="350" delay="2000" reversible="false" condition="control.isvisible(010020)">conditional</animation>
         <visible allowhiddenfocus="true">control.hasfocus(91915991)</visible>
       </control>
@@ -2106,17 +2106,17 @@
         <id>91915992</id>
         <posX>193</posX>
         <posY>#home.latest.play.posy</posY>
-        <width>50</width>
-        <height>50</height>
-        <textureFocus>play_btn_white.png</textureFocus>
-        <textureNoFocus>play_btn_white.png</textureNoFocus>
+        <width>#home.latest.play.width</width>
+        <height>#home.latest.play.height</height>
+        <textureFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureFocus>
+        <textureNoFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureNoFocus>
         <label />
         <onleft>91915991</onleft>
         <onright>91915993</onright>
         <onup>2</onup>
         <ondown>#skin.currentTile</ondown>
         <font>font12</font>
-        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false">Visible</animation>
+        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false" condition="string.equals(#skin.home.latest.type,small)">Visible</animation>
         <animation effect="fade" time="350" delay="2000" reversible="false" condition="control.isvisible(010020)">conditional</animation>
         <visible allowhiddenfocus="true">control.hasfocus(91915992)</visible>
       </control>
@@ -2126,17 +2126,17 @@
         <id>91915993</id>
         <posX>330</posX>
         <posY>#home.latest.play.posy</posY>
-        <width>50</width>
-        <height>50</height>
-        <textureFocus>play_btn_white.png</textureFocus>
-        <textureNoFocus>play_btn_white.png</textureNoFocus>
+        <width>#home.latest.play.width</width>
+        <height>#home.latest.play.height</height>
+        <textureFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureFocus>
+        <textureNoFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureNoFocus>
         <label />
         <onleft>91915992</onleft>
         <onright>91915993</onright>
         <onup>2</onup>
         <ondown>#skin.currentTile</ondown>
         <font>font12</font>
-        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false">Visible</animation>
+        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false" condition="string.equals(#skin.home.latest.type,small)">Visible</animation>
         <animation effect="fade" time="350" delay="2000" reversible="false" condition="control.isvisible(010020)">conditional</animation>
         <visible allowhiddenfocus="true">control.hasfocus(91915993)</visible>
       </control>
@@ -2442,10 +2442,10 @@
         <id>91919971</id>
         <posX>76</posX>
         <posY>#home.latest.play.posy</posY>
-        <width>50</width>
-        <height>50</height>
-        <textureFocus>play_btn_white.png</textureFocus>
-        <textureNoFocus>play_btn_white.png</textureNoFocus>
+        <width>#home.latest.play.width</width>
+        <height>#home.latest.play.height</height>
+        <textureFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureFocus>
+        <textureNoFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureNoFocus>
         <keepaspectratio>true</keepaspectratio>
         <label />
         <onleft>91919971</onleft>
@@ -2453,7 +2453,7 @@
         <onup>2</onup>
         <ondown>#skin.currentTile</ondown>
         <font>font12</font>
-        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false">Visible</animation>
+        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false" condition="string.equals(#skin.home.latest.type,small)">Visible</animation>
         <animation effect="fade" time="350" delay="2000" reversible="false" condition="control.isvisible(013016)">conditional</animation>
         <visible allowhiddenfocus="true">control.hasfocus(91919971)</visible>
       </control>
@@ -2463,10 +2463,10 @@
         <id>91919972</id>
         <posX>266</posX>
         <posY>#home.latest.play.posy</posY>
-        <width>50</width>
-        <height>50</height>
-        <textureFocus>play_btn_white.png</textureFocus>
-        <textureNoFocus>play_btn_white.png</textureNoFocus>
+        <width>#home.latest.play.width</width>
+        <height>#home.latest.play.height</height>
+        <textureFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureFocus>
+        <textureNoFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureNoFocus>
         <keepaspectratio>true</keepaspectratio>
         <label />
         <onleft>91919971</onleft>
@@ -2474,7 +2474,7 @@
         <onup>2</onup>
         <ondown>#skin.currentTile</ondown>
         <font>font12</font>
-        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false">Visible</animation>
+        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false" condition="string.equals(#skin.home.latest.type,small)">Visible</animation>
         <animation effect="fade" time="350" delay="2000" reversible="false" condition="control.isvisible(013016)">conditional</animation>
         <visible allowhiddenfocus="true">control.hasfocus(91919972)</visible>
       </control>
@@ -2484,10 +2484,10 @@
         <id>91919973</id>
         <posX>436</posX>
         <posY>#home.latest.play.posy</posY>
-        <width>50</width>
-        <height>50</height>
-        <textureFocus>play_btn_white.png</textureFocus>
-        <textureNoFocus>play_btn_white.png</textureNoFocus>
+        <width>#home.latest.play.width</width>
+        <height>#home.latest.play.height</height>
+        <textureFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureFocus>
+        <textureNoFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureNoFocus>
         <keepaspectratio>true</keepaspectratio>
         <label />
         <onleft>91919972</onleft>
@@ -2495,7 +2495,7 @@
         <onup>2</onup>
         <ondown>#skin.currentTile</ondown>
         <font>font12</font>
-        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false">Visible</animation>
+        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false" condition="string.equals(#skin.home.latest.type,small)">Visible</animation>
         <animation effect="fade" time="350" delay="2000" reversible="false" condition="control.isvisible(013016)">conditional</animation>
         <visible allowhiddenfocus="true">control.hasfocus(91919973)</visible>
       </control>
@@ -4006,17 +4006,17 @@
         <id>91929928</id>
         <posX>56</posX>
         <posY>#home.latest.play.posy</posY>
-        <width>50</width>
-        <height>50</height>
-        <textureFocus>play_btn_white.png</textureFocus>
-        <textureNoFocus>play_btn_white.png</textureNoFocus>
+        <width>#home.latest.play.width</width>
+        <height>#home.latest.play.height</height>
+        <textureFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureFocus>
+        <textureNoFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureNoFocus>
         <label />
         <onleft>91929928</onleft>
         <onright>91929929</onright>
         <onup>2</onup>
         <ondown>#skin.currentTile</ondown>
         <font>font12</font>
-        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false">Visible</animation>
+        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false" condition="string.equals(#skin.home.latest.type,small)">Visible</animation>
         <animation effect="fade" time="350" delay="2000" reversible="false" condition="control.isvisible(010033)">conditional</animation>
         <visible allowhiddenfocus="true">control.hasfocus(91929928)</visible>
       </control>
@@ -4026,17 +4026,17 @@
         <id>91929929</id>
         <posX>246</posX>
         <posY>#home.latest.play.posy</posY>
-        <width>50</width>
-        <height>50</height>
-        <textureFocus>play_btn_white.png</textureFocus>
-        <textureNoFocus>play_btn_white.png</textureNoFocus>
+        <width>#home.latest.play.width</width>
+        <height>#home.latest.play.height</height>
+        <textureFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureFocus>
+        <textureNoFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureNoFocus>
         <label />
         <onleft>91929928</onleft>
         <onright>91929930</onright>
         <onup>2</onup>
         <ondown>#skin.currentTile</ondown>
         <font>font12</font>
-        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false">Visible</animation>
+        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false" condition="string.equals(#skin.home.latest.type,small)">Visible</animation>
         <animation effect="fade" time="350" delay="2000" reversible="false" condition="control.isvisible(010033)">conditional</animation>
         <visible allowhiddenfocus="true">control.hasfocus(91929929)</visible>
       </control>
@@ -4046,17 +4046,17 @@
         <id>91929930</id>
         <posX>436</posX>
         <posY>#home.latest.play.posy</posY>
-        <width>50</width>
-        <height>50</height>
-        <textureFocus>play_btn_white.png</textureFocus>
-        <textureNoFocus>play_btn_white.png</textureNoFocus>
+        <width>#home.latest.play.width</width>
+        <height>#home.latest.play.height</height>
+        <textureFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureFocus>
+        <textureNoFocus>#(iif(eq(#skin.home.latest.type,'small'),'play_btn_white.png','play_overlayframe.png'))</textureNoFocus>
         <label />
         <onleft>91929929</onleft>
         <onright>91929930</onright>
         <onup>2</onup>
         <ondown>#skin.currentTile</ondown>
         <font>font12</font>
-        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false">Visible</animation>
+        <animation effect="fade" time="1000" start= "100" end= "50" reversible="false" condition="string.equals(#skin.home.latest.type,small)">Visible</animation>
         <animation effect="fade" time="350" delay="2000" reversible="false" condition="control.isvisible(010033)">conditional</animation>
         <visible allowhiddenfocus="true">control.hasfocus(91929930)</visible>
       </control>
