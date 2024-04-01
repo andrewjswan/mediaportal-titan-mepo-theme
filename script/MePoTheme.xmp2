@@ -3460,10 +3460,10 @@ Click Next to continue or Cancel to exit Setup.</Value>
 Clear/CD Art etc. support for Titan, 
 Weather icon on screen, 
 bugfixes and more.</ExtensionDescription>
-    <VersionDescription>Move MePo Theme to own repository</VersionDescription>
+    <VersionDescription>Add 'Latest Media Play Button size' option to skin setting, thx @KJ-Cox</VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
     <OnlineLocation>https://github.com/andrewjswan/mediaportal-titan-mepo-theme/releases/download/v[Version]/MePoTheme.Titan-[Version].mpe1</OnlineLocation>
-    <ReleaseDate>2024-03-26T20:20:20</ReleaseDate>
+    <ReleaseDate>2024-04-01T20:20:20</ReleaseDate>
     <Tags>ajs, titan, theme, mepo</Tags>
     <PlatformCompatibility>AnyCPU</PlatformCompatibility>
     <Location>..\build\MePoTheme.Titan-[Version].mpe1</Location>

@@ -24,10 +24,10 @@ SET version=%version: =%
 SET version=5.0.0.%version%
 
 :: Temp xmp2 file
-copy MePoTheme.xmp2 MePoThemeTemp.xmp2
+COPY MePoTheme.xmp2 MePoThemeTemp.xmp2
 
 :: Build MPE1
 "%PROGS%\Team MediaPortal\MediaPortal\MPEMaker.exe" "MePoThemeTemp.xmp2" /B /V=%version% /UpdateXML
 
 :: Cleanup
-del MePoThemeTemp.xmp2
+IF NOT [%1] == [git] (DEL MePoThemeTemp.xmp2)
