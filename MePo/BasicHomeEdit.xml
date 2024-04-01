@@ -224,14 +224,22 @@
             <ondown>20808</ondown>
           </control>
           <control Style="SettingsCheckButtonMedium">
-            <description>Time</description>
-            <type>checkbutton</type>
+            <description>Latest Media Play button</description>
+            <type>menubutton</type>
             <id>20806</id>
-            <label>24hr time format</label>
             <width>550</width>
-            <onfocus>#(skin.setstring('#skin.hint.description','Choose between 12 or 24 hour display for clock in top right'))</onfocus>
-            <selected>#(skin.hassetting('#Dtimeformat'))</selected>
-            <onclick>#(skin.togglesetting('#Dtimeformat'))</onclick>
+            <height>50</height>
+            <mode>dialoglist</mode>
+            <onfocus>#(skin.setstring('#skin.hint.description','Set which type of play icon you want to display on BasicHome Latest Media'))</onfocus>
+            <dialogTitle>Latest Media Play Button size</dialogTitle>
+            <valueTextInButton>yes</valueTextInButton>
+            <valuePrefixText>Latest Media Play Button size: </valuePrefixText>
+            <onclick>#(skin.setstring('#skin.home.latest.type',#selectedlabel20806))</onclick>
+            <binding>#skin.home.latest.type</binding>
+            <subitems>
+              <subitem>small</subitem>
+              <subitem>big</subitem>
+            </subitems>
             <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
             <onup>20803</onup>
             <onright>20807</onright>
@@ -365,6 +373,7 @@
             <selected>#(skin.hassetting('#skin.fullday'))</selected>
             <onESC>#(skin.setfocus(35,cint(#skin.setnav)))</onESC>
             <onclick>#(skin.togglesetting('#skin.fullday'))</onclick>
+            <visible>false</visible>
             <onup>20811</onup>
             <onright>#(cint(#skin.setnav))</onright>
             <onleft>20813</onleft>

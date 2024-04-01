@@ -26,7 +26,11 @@
   <define property="true" evaluateNow="true">#home.latest.title.posy:#(switch( eq(#skin.home.button.type,'small'),515, eq(#skin.home.button.type,'middle'),414, eq(1,1),215))</define>
   <define property="true" evaluateNow="true">#home.latest.scroll.posy:#(switch( eq(#skin.home.button.type,'small'),565, eq(#skin.home.button.type,'middle'),464, eq(1,1),265))</define>
   <define property="true" evaluateNow="true">#home.latest.tile.posy:#(switch( eq(#skin.home.button.type,'small'),498, eq(#skin.home.button.type,'middle'),397, eq(1,1),198))</define>
+  <define property="true" evaluateNow="true">#home.latest.type:#(switch( eq(#skin.home.latest.type,'small'),'small', eq(1,1),'big'))</define>  
   <define property="true" evaluateNow="true">#home.latest.play.posy:#(switch( eq(#skin.home.button.type,'small'),638, eq(#skin.home.button.type,'middle'),537, eq(1,1),338))</define>
+  <define property="true" evaluateNow="true">#home.latest.play.posy:#(iif(eq(#skin.home.latest.type,'small'), cint(#home.latest.play.posy), sub(cint(#home.latest.play.posy),138)))</define>
+  <define property="true" evaluateNow="true">#home.latest.play.width:#(iif( eq(#skin.home.latest.type,'small'),50,132))</define>
+  <define property="true" evaluateNow="true">#home.latest.play.height:#(iif( eq(#skin.home.latest.type,'small'),50,189))</define>
 
   <!--     *****************                        Latests Picturs             ********************  -->
   <define property="true" evaluateNow="true">#home.latest.pictures.line1.posy:#(switch( eq(#skin.home.button.type,'small'),515, eq(#skin.home.button.type,'middle'),414, eq(1,1),215))</define>
