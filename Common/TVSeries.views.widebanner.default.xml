@@ -498,121 +498,21 @@
 	  <animation effect="fade" time="250">WindowClose</animation>
 	</control>
     
-    <control Style="MediaLogos">
-      <description>Video resolution</description>
-    <type>image</type>
-    <id>0</id>
-        <posX>660</posX>
-        <posY>890</posY>
-    <width>92</width>
-    <height>60</height>
-    <texture>Logos\resolution\#(switch(
-  lt(cint(#TVSeries.Episode.videoWidth), 960), '480',
-  and(eq(cint(#TVSeries.Episode.videoWidth), 960), lte(cint(#TVSeries.Episode.videoHeight), 600)), '540',
-  or(eq(cint(#TVSeries.Episode.videoWidth), 1280), eq(cint(#TVSeries.Episode.videoHeight), 720)), '720p',
-  or(eq(cint(#TVSeries.Episode.videoWidth), 1920), eq(cint(#TVSeries.Episode.videoHeight), 1080)), '1080p',
-  or(eq(cint(#TVSeries.Episode.videoWidth), 3840), eq(cint(#TVSeries.Episode.videoHeight), 2160)), '4K')).png</texture>
-    <keepaspectratio>yes</keepaspectratio>
-         <visible>facadeview.list+Control.IsVisible(1239)</visible>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
-  </control>
-    <control Style="MediaLogos">
-      <description>Video codec</description>
-    <type>image</type>
-    <id>0</id>
-        <posX>740</posX>
-        <posY>890</posY>
-    <width>92</width>
-    <height>60</height>
-    <texture>Logos\video\#(switch(
-  or(eq(#TVSeries.Episode.VideoFormat, 'AVC'), eq(#TVSeries.Episode.VideoCodec, 'H264')), 'h264',
-  or(eq(#TVSeries.Episode.VideoFormat, 'HEVC'), eq(#TVSeries.Episode.VideoCodec, 'H265')), 'h265',
-  and(eq(#TVSeries.Episode.VideoFormat, 'MPEG Video'), eq(string.contains(#TVSeries.Episode.VideoFormatProfile, 'Main'), 'true')), 'mpeg2',
-  or(eq(string.contains(#TVSeries.Episode.VideoCodec, 'DIVX'), 'true'), eq(string.contains(#TVSeries.Episode.VideoCodec, 'DX50'), 'true'), eq(string.contains(#TVSeries.Episode.VideoCodec, 'DIV3'), 'true')), 'divx',
-  or(eq(string.contains(#TVSeries.Episode.VideoCodec, 'XVID'), 'true'), eq(string.contains(#TVSeries.Episode.VideoCodec, 'MPG4'), 'true')), 'xvid',
-  or(eq(string.contains(#TVSeries.Episode.VideoFormat, 'VC-1'), 'true'), eq(string.contains(#TVSeries.Episode.VideoCodec, 'VC1'), 'true')), 'vc-1',
-  eq(string.contains(#TVSeries.Episode.VideoCodec, 'WMV'), 'true'), 'wmv',
-  eq(#TVSeries.Episode.VideoFormat, 'VP6'), 'vp6f',
-  eq(string.contains(#TVSeries.Episode.VideoCodec, 'REAL'), 'true'), 'real')).png</texture>
-    <keepaspectratio>yes</keepaspectratio>
-         <visible>facadeview.list+Control.IsVisible(1239)</visible>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
-  </control>
-    <control Style="MediaLogos">
-      <description>Audio codec</description>
-    <type>image</type>
-    <id>0</id>
-        <posX>825</posX>
-        <posY>890</posY>
-    <width>92</width>
-    <height>60</height>
-    <texture>Logos\audio\#(switch(
-  eq(#TVSeries.Episode.AudioFormat, 'AC-3'), 'ac-3',
-  eq(#TVSeries.Episode.AudioFormat, 'E-AC-3'), 'e-ac-3',
-  eq(#TVSeries.Episode.AudioFormat, 'eac3'), 'eac3',
-  eq(#TVSeries.Episode.AudioFormat, 'DTS'), 'dts',
-  and(eq(#TVSeries.Episode.AudioFormat, 'DTS'), eq(#TVSeries.Episode.AudioFormatProfile, 'MA')), 'dtshd_ma',
-  and(eq(#TVSeries.Episode.AudioFormat, 'DTS'), eq(#TVSeries.Episode.AudioFormatProfile, 'HRA')), 'dtshd_hra',
-  eq(string.contains(#TVSeries.Episode.AudioFormatProfile, 'TrueHD'), 'true'), 'truehd',
-  eq(#TVSeries.Episode.AudioFormat, 'MPEG Audio'), 'mp3',
-  eq(string.contains(#TVSeries.Episode.AudioFormat, 'FLAC'), 'true'), 'flac',
-  eq(#TVSeries.Episode.AudioFormat, 'AAC'), 'aac',
-  eq(#TVSeries.Episode.AudioFormat, 'VORBIS'), 'vorbis',
-  eq(string.contains(#TVSeries.Episode.AudioFormat, 'REAL'), 'true'), 'RA',
-  eq(#TVSeries.Episode.AudioFormat, 'WMA'), 'wma')).png</texture>
-    <keepaspectratio>yes</keepaspectratio>
-         <visible>facadeview.list+Control.IsVisible(1239)</visible>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
-  </control>
-    <control Style="MediaLogos">
-      <description>Audio channels</description>
-    <type>image</type>
-    <id>0</id>
-        <posX>905</posX>
-        <posY>890</posY>
-    <width>92</width>
-    <height>60</height>
-    <texture>Logos\audio\#(switch(
-  eq(#TVSeries.Episode.AudioChannels, '2'), '2.0',
-  eq(#TVSeries.Episode.AudioChannels, '6'), '5.1',
-  eq(#TVSeries.Episode.AudioChannels, '7'), '6.1',
-  eq(#TVSeries.Episode.AudioChannels, '8'), '7.1')).png</texture>
-    <keepaspectratio>yes</keepaspectratio>
-         <visible>facadeview.list+Control.IsVisible(1239)</visible>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
-  </control>
- 
-    <control Style="MediaLogos">
-      <description>Aspect ratio</description>
-    <type>image</type>
-    <id>0</id>
-        <posX>975</posX>
-        <posY>890</posY>
-    <width>92</width>
-    <height>60</height>
-    <texture>Logos\aspectratio\#(iif(gte(#TVSeries.Episode.VideoAspectRatio, '1.5'),'widescreen','fullscreen')).png</texture>
-    <keepaspectratio>yes</keepaspectratio>
-         <visible>facadeview.list+Control.IsVisible(1239)</visible>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
-  </control>
-    <control Style="MediaLogos">
-      <description>Subtitle</description>
-      <type>image</type>
-      <id>0</id>
-      <posX>1065</posX>
-      <posY>900</posY>
-      <width>39</width>
-      <height>40</height>
-      <texture>Logos\#(iif(eq(#TVSeries.Episode.AvailableSubtitles, 0),'nosubtitles','subtitles')).png</texture>
-      <visible>facadeview.list+Control.IsVisible(1239)</visible>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
-    </control>
+	<control>
+		<type>image</type>
+		<description>Logos</description>
+		<id>66</id>
+		<posX>664</posX>
+		<posY>889</posY>
+    <width>550</width>
+    <height>61</height>
+		<texture>#TVSeries.Logos</texture>
+		<keepaspectratio>yes</keepaspectratio>
+    <spaceBetweenItems>0</spaceBetweenItems>
+		<visible>facadeview.list+control.isvisible(1239)</visible>
+	  <animation effect="fade" time="250">WindowOpen</animation>
+	  <animation effect="fade" time="250">WindowClose</animation>
+	</control>	
 	
 	<control>
 		<description>certification logo</description>
