@@ -263,7 +263,7 @@ This file should contain the details view
     <control Style="InfoValueDetails">
       <description>Runtime</description>
       <type>label</type>
-      <label>#MovingPictures.SelectedMovie.runtime.totalminutes min</label>
+      <label>#MovingPictures.SelectedMovie.extra.runtime.short:#MovingPictures.SelectedMovie.runtime.second min</label>
       <id>0</id>
       <posX>1273</posX>
       <posY>499</posY>
@@ -924,7 +924,7 @@ This file should contain the details view
    		<width>250</width>
    		<height>140</height>
 		<texture>..\..\..\Thumbs\ClearArt\Movies\#(string.trim(#MovingPictures.SelectedMovie.imdb_id)).png</texture>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<visible>[!Control.IsVisible(50)+!Control.IsVisible(51)] + !Control.HasFocus(10005)</visible>
 		<animation effect="fade" time="250">Visible</animation>
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
@@ -941,11 +941,13 @@ This file should contain the details view
         <height>300</height>
 		<texture>..\..\..\Thumbs\CDArt\Movies\#(string.trim(#MovingPictures.SelectedMovie.imdb_id)).png</texture>
         <keepaspectratio>yes</keepaspectratio>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003) + !Control.HasFocus(10005)</visible>
       	<animation effect="fade" time="250" start= "100" end= "50" condition="true">conditional</animation>
 		<animation effect="fade" time="400">Visible</animation>
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
+        <animation effect="rotate" time="1000" start="-100" end="0" condition="[!Control.IsVisible(50)+!Control.IsVisible(51)] + !Control.HasFocus(10005)">conditional</animation>
+        <animation effect="fade" time="250" condition="[!Control.IsVisible(50)+!Control.IsVisible(51)] + !Control.HasFocus(10005)">conditional</animation>
 	</control>
 
 	<!-- ClearLogo -->
@@ -959,7 +961,7 @@ This file should contain the details view
         <height>155</height>
 		<texture>..\..\..\Thumbs\ClearLogo\Movies\#(string.trim(#MovingPictures.SelectedMovie.imdb_id)).png</texture>
         <keepaspectratio>yes</keepaspectratio>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10002) + !Control.HasFocus(10003) + !Control.HasFocus(20002)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10002) + !Control.HasFocus(10003) + !Control.HasFocus(20002) + !Control.HasFocus(10005)</visible>
       	<animation effect="fade" time="250" start= "100" end= "60" condition="true">conditional</animation>
 		<animation effect="fade" time="400">Visible</animation>
         <animation effect="fade" time="250">WindowOpen</animation>
@@ -977,7 +979,7 @@ This file should contain the details view
         <height>155</height>
 		<texture>..\..\..\Thumbs\ClearLogo\Movies\#(string.trim(#MovingPictures.SelectedMovie.imdb_id)).png</texture>
         <keepaspectratio>yes</keepaspectratio>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003) + Control.HasFocus(20002)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003) + Control.HasFocus(20002) + !Control.HasFocus(10005)</visible>
       	<animation effect="fade" time="250" start= "100" end= "60" condition="true">conditional</animation>
 		<animation effect="fade" time="400">Visible</animation>
         <animation effect="fade" time="250">WindowOpen</animation>
