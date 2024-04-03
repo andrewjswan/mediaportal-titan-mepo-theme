@@ -269,6 +269,13 @@
               <ZipFileName>Installer{CopyFile}\{30ae9fc8-f70c-4165-aa56-def83b23be73}-TVSeries.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Themes\MePo\TVSeries.xml</DestinationFilename>
             </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\TVSeries.facade.widebanner.default.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{c1dc10dc-8b56-4175-ba80-981a65e58fc4}-TVSeries.facade.widebanner.default.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\TVSeries.facade.widebanner.default.xml</DestinationFilename>
+            </FileItem>
           </Items>
         </Files>
       </GroupItem>
@@ -550,13 +557,6 @@
               <LocalFileName>..\MePo\Basichome_Settings5Img.xml</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{eff1d785-eb68-4866-b8f6-83d595a57fc5}-Basichome_Settings5Img.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Themes\MePo\Basichome_Settings5Img.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\MePo\common.time.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{9ed1f2ca-d8bb-4728-8b83-5e07b24c0040}-common.time.xml</ZipFileName>
-              <DestinationFilename>%Skin%\Titan\Themes\MePo\common.time.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
               <Param1 />
@@ -3460,10 +3460,11 @@ Click Next to continue or Cancel to exit Setup.</Value>
 Clear/CD Art etc. support for Titan, 
 Weather icon on screen, 
 bugfixes and more.</ExtensionDescription>
-    <VersionDescription>Add 'Latest Media Play Button size' option to skin setting, thx @KJ-Cox</VersionDescription>
+    <VersionDescription>MP-TVSeries 'Season' label offset fix
+Moving Pictures ClearArt changes and Runtime change, thx @KJ-Cox</VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
     <OnlineLocation>https://github.com/andrewjswan/mediaportal-titan-mepo-theme/releases/download/v[Version]/MePoTheme.Titan-[Version].mpe1</OnlineLocation>
-    <ReleaseDate>2024-04-01T20:20:20</ReleaseDate>
+    <ReleaseDate>2024-04-03T20:20:20</ReleaseDate>
     <Tags>ajs, titan, theme, mepo</Tags>
     <PlatformCompatibility>AnyCPU</PlatformCompatibility>
     <Location>..\build\MePoTheme.Titan-[Version].mpe1</Location>
@@ -3763,6 +3764,13 @@ bugfixes and more.</ExtensionDescription>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\TVSeries.facade.widebanner.default.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{c1dc10dc-8b56-4175-ba80-981a65e58fc4}-TVSeries.facade.widebanner.default.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\TVSeries.facade.widebanner.default.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\MePo\BasicHome.Background.Hover.xml</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{e84d27b4-4d49-4605-b0b7-129369360413}-BasicHome.Background.Hover.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Themes\MePo\BasicHome.Background.Hover.xml</DestinationFilename>
@@ -4032,13 +4040,6 @@ bugfixes and more.</ExtensionDescription>
         <LocalFileName>..\MePo\Basichome_Settings5Img.xml</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{eff1d785-eb68-4866-b8f6-83d595a57fc5}-Basichome_Settings5Img.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Themes\MePo\Basichome_Settings5Img.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\MePo\common.time.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{9ed1f2ca-d8bb-4728-8b83-5e07b24c0040}-common.time.xml</ZipFileName>
-        <DestinationFilename>%Skin%\Titan\Themes\MePo\common.time.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
         <Param1 />
