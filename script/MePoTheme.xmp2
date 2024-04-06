@@ -276,6 +276,20 @@
               <ZipFileName>Installer{CopyFile}\{c1dc10dc-8b56-4175-ba80-981a65e58fc4}-TVSeries.facade.widebanner.default.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Themes\MePo\TVSeries.facade.widebanner.default.xml</DestinationFilename>
             </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\movingpictures.mediainfo.details.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{6d38b553-2548-49c9-ba6b-147de844aaa2}-movingpictures.mediainfo.details.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\movingpictures.mediainfo.details.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\movingpictures.mediainfo.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{9788e6da-7697-4ba7-bdd1-3faeefcb143b}-movingpictures.mediainfo.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\movingpictures.mediainfo.xml</DestinationFilename>
+            </FileItem>
           </Items>
         </Files>
       </GroupItem>
@@ -3456,15 +3470,14 @@ Click Next to continue or Cancel to exit Setup.</Value>
       <Build>0</Build>
       <Revision>0</Revision>
     </Version>
-    <ExtensionDescription>Ares style BasicHome editor
-Clear/CD Art etc. support for Titan, 
-Weather icon on screen, 
+    <ExtensionDescription>Ares style BasicHome editor
+Clear/CD Art etc. support for Titan, 
+Weather icon on screen, 
 bugfixes and more.</ExtensionDescription>
-    <VersionDescription>MP-TVSeries 'Season' label offset fix
-Moving Pictures ClearArt changes and Runtime change, thx @KJ-Cox</VersionDescription>
+    <VersionDescription>TVSeries MediaInfo fix, thx @KJ-Cox</VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
     <OnlineLocation>https://github.com/andrewjswan/mediaportal-titan-mepo-theme/releases/download/v[Version]/MePoTheme.Titan-[Version].mpe1</OnlineLocation>
-    <ReleaseDate>2024-04-03T20:20:20</ReleaseDate>
+    <ReleaseDate>2024-04-06T20:20:20</ReleaseDate>
     <Tags>ajs, titan, theme, mepo</Tags>
     <PlatformCompatibility>AnyCPU</PlatformCompatibility>
     <Location>..\build\MePoTheme.Titan-[Version].mpe1</Location>
@@ -3767,6 +3780,20 @@ Moving Pictures ClearArt changes and Runtime change, thx @KJ-Cox</VersionDescrip
         <LocalFileName>..\Common\TVSeries.facade.widebanner.default.xml</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{c1dc10dc-8b56-4175-ba80-981a65e58fc4}-TVSeries.facade.widebanner.default.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Themes\MePo\TVSeries.facade.widebanner.default.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\movingpictures.mediainfo.details.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{6d38b553-2548-49c9-ba6b-147de844aaa2}-movingpictures.mediainfo.details.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\movingpictures.mediainfo.details.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\movingpictures.mediainfo.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{9788e6da-7697-4ba7-bdd1-3faeefcb143b}-movingpictures.mediainfo.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\movingpictures.mediainfo.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
         <Param1 />
