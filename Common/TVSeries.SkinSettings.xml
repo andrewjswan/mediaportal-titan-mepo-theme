@@ -177,41 +177,41 @@
 <Enabled>1<Format>SeasonUnWatched<FormatAs>Eval(PrettyNumber10(<Season.EpisodesUnWatched>))
 <Enabled>1<Format>SMALLSPACE<FormatAs> ]]>
 	</formatting>
-  <logos import="true"><![CDATA[skin\Titan\Media\Logos\resolution\480.png;-;<Episode.videoWidth>;-;<;-;960;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\resolution\540.png;-;<Episode.videoWidth>;-;=;-;960;-;AND;-;<Episode.videoHeight>;-;<=;-;600;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\resolution\720p.png;-;<Episode.videoWidth>;-;=;-;1280;-;OR;-;<Episode.videoHeight>;-;=;-;720;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\resolution\1080p.png;-;<Episode.videoWidth>;-;=;-;1920;-;OR;-;<Episode.videoHeight>;-;=;-;1080;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\resolution\4K.png;-;<Episode.videoWidth>;-;=;-;3840;-;OR;-;<Episode.videoHeight>;-;=;-;2160;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\resolution\widescreen.png;-;<Episode.VideoAspectRatio>;-;<;-;1.9;-;AND;-;<Episode.VideoAspectRatio>;-;>=;-;1.5;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\resolution\fullscreen.png;-;<Episode.VideoAspectRatio>;-;<;-;1.5;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\video\h264.png;-;<Episode.VideoFormat>;-;=;-;AVC;-;OR;-;<Episode.VideoCodec>;-;=;-;H264;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\video\h265.png;-;<Episode.VideoFormat>;-;=;-;HEVC;-;OR;-;<Episode.VideoCodec>;-;=;-;H265;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\video\mpeg2.png;-;<Episode.VideoFormat>;-;=;-;MPEG Video;-;AND;-;<Episode.VideoFormatProfile>;-;contains;-;Main;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\video\divx.png;-;<Episode.VideoCodec>;-;contains;-;DIVX;-;OR;-;<Episode.VideoCodec>;-;contains;-;DX50;-;OR;-;<Episode.VideoCodec>;-;contains;-;DIV3;-;<Restrict:Episode>
-skin\Titan\Media\Logos\video\xvid.png;-;<Episode.VideoCodec>;-;contains;-;XVID;-;OR;-;<Episode.VideoCodec>;-;contains;-;MPG4;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\video\vc-1.png;-;<Episode.VideoFormat>;-;contains;-;VC-1;-;OR;-;<Episode.VideoCodec>;-;contains;-;VC1;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\video\wmv.png;-;<Episode.VideoCodec>;-;contains;-;WMV;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\video\vp6f.png;-;<Episode.VideoFormat>;-;=;-;VP6;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\video\real.png;-;<Episode.VideoCodec>;-;contains;-;REAL;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\audio\ac-3.png;-;<Episode.AudioFormat>;-;=;-;AC-3;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\audio\e-ac-3.png;-;<Episode.AudioFormat>;-;=;-;E-AC-3;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\audio\eac3 atmos.png;-;<Episode.AudioFormat>;-;=;-;eac3 atmos;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\audio\dts.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\audio\dtshd_ma.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;MA;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\audio\dtshd_hra.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;HRA;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\audio\truehd.png;-;<Episode.AudioFormatProfile>;-;contains;-;TrueHD;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\audio\mp3.png;-;<Episode.AudioFormat>;-;=;-;MPEG Audio;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\audio\flac.png;-;<Episode.AudioFormat>;-;contains;-;FLAC;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\audio\aac.png;-;<Episode.AudioFormat>;-;=;-;AAC;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\audio\vorbis.png;-;<Episode.AudioFormat>;-;=;-;VORBIS;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\audio\wma.png;-;<Episode.AudioFormat>;-;=;-;WMA;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\audio\2.0.png;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\audio\5.1.png;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\audio\6.1.png;-;<Episode.AudioChannels>;-;=;-;7;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\audio\7.1.png;-;<Episode.AudioChannels>;-;=;-;8;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\audio\RA.png;-;<Episode.AudioFormat>;-;contains;-;REAL;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Titan\Media\Logos\subtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;1;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;subbed.;-;AND;-;;-;=;-;;-;
-skin\Titan\Media\Logos\nosubtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;0;-;AND;-;;-;=;-;;-;
+  <logos import="true"><![CDATA[skin\Titan\Themes\MePo\Media\TVLogos\resolution\480.png;-;<Episode.videoWidth>;-;<;-;960;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\resolution\540.png;-;<Episode.videoWidth>;-;=;-;960;-;AND;-;<Episode.videoHeight>;-;<=;-;600;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\resolution\720p.png;-;<Episode.videoWidth>;-;=;-;1280;-;OR;-;<Episode.videoHeight>;-;=;-;720;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\resolution\1080p.png;-;<Episode.videoWidth>;-;=;-;1920;-;OR;-;<Episode.videoHeight>;-;=;-;1080;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\resolution\4K.png;-;<Episode.videoWidth>;-;=;-;3840;-;OR;-;<Episode.videoHeight>;-;=;-;2160;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\resolution\widescreen.png;-;<Episode.VideoAspectRatio>;-;<;-;1.9;-;AND;-;<Episode.VideoAspectRatio>;-;>=;-;1.5;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\resolution\fullscreen.png;-;<Episode.VideoAspectRatio>;-;<;-;1.5;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\video\h264.png;-;<Episode.VideoFormat>;-;=;-;AVC;-;OR;-;<Episode.VideoCodec>;-;=;-;H264;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\video\h265.png;-;<Episode.VideoFormat>;-;=;-;HEVC;-;OR;-;<Episode.VideoCodec>;-;=;-;H265;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\video\mpeg2.png;-;<Episode.VideoFormat>;-;=;-;MPEG Video;-;AND;-;<Episode.VideoFormatProfile>;-;contains;-;Main;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\video\divx.png;-;<Episode.VideoCodec>;-;contains;-;DIVX;-;OR;-;<Episode.VideoCodec>;-;contains;-;DX50;-;OR;-;<Episode.VideoCodec>;-;contains;-;DIV3;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\video\xvid.png;-;<Episode.VideoCodec>;-;contains;-;XVID;-;OR;-;<Episode.VideoCodec>;-;contains;-;MPG4;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\video\vc-1.png;-;<Episode.VideoCodec>;-;!=;-;H264;-;AND;-;<Episode.VideoFormat>;-;contains;-;VC-1;-;OR;-;<Episode.VideoCodec>;-;contains;-;VC1;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\video\wmv.png;-;<Episode.VideoCodec>;-;contains;-;WMV;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\video\vp6f.png;-;<Episode.VideoFormat>;-;=;-;VP6;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\video\real.png;-;<Episode.VideoCodec>;-;contains;-;REAL;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\audio\ac-3.png;-;<Episode.AudioFormat>;-;=;-;AC-3;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\audio\e-ac-3.png;-;<Episode.AudioFormat>;-;=;-;E-AC-3;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\audio\eac3 atmos.png;-;<Episode.AudioFormat>;-;=;-;eac3 atmos;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\audio\dts.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\audio\dtshd_ma.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;MA;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\audio\dtshd_hra.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;HRA;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\audio\truehd.png;-;<Episode.AudioFormatProfile>;-;contains;-;TrueHD;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\audio\mp3.png;-;<Episode.AudioFormat>;-;=;-;MPEG Audio;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\audio\flac.png;-;<Episode.AudioFormat>;-;contains;-;FLAC;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\audio\aac.png;-;<Episode.AudioFormat>;-;=;-;AAC;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\audio\vorbis.png;-;<Episode.AudioFormat>;-;=;-;VORBIS;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\audio\wma.png;-;<Episode.AudioFormat>;-;=;-;WMA;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\audio\RA.png;-;<Episode.AudioFormat>;-;contains;-;REAL;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\audio\2.0.png;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\audio\5.1.png;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\audio\6.1.png;-;<Episode.AudioChannels>;-;=;-;7;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\audio\7.1.png;-;<Episode.AudioChannels>;-;=;-;8;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Titan\Themes\MePo\Media\TVLogos\subtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;1;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;subbed.;-;AND;-;;-;=;-;;-;
+skin\Titan\Themes\MePo\Media\TVLogos\nosubtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;0;-;AND;-;;-;=;-;;-;
 ]]></logos>
 	
 	<!-- 
