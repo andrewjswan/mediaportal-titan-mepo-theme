@@ -290,6 +290,13 @@
               <ZipFileName>Installer{CopyFile}\{9788e6da-7697-4ba7-bdd1-3faeefcb143b}-movingpictures.mediainfo.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Themes\MePo\movingpictures.mediainfo.xml</DestinationFilename>
             </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\movingpictures.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{b886b481-7510-4293-a16f-5a1f06878da6}-movingpictures.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\movingpictures.xml</DestinationFilename>
+            </FileItem>
           </Items>
         </Files>
       </GroupItem>
@@ -3470,14 +3477,17 @@ Click Next to continue or Cancel to exit Setup.</Value>
       <Build>0</Build>
       <Revision>0</Revision>
     </Version>
-    <ExtensionDescription>Ares style BasicHome editor
-Clear/CD Art etc. support for Titan, 
-Weather icon on screen, 
+    <ExtensionDescription>Ares style BasicHome editor
+
+Clear/CD Art etc. support for Titan, 
+
+Weather icon on screen, 
+
 bugfixes and more.</ExtensionDescription>
-    <VersionDescription>TVSeries MediaInfo fix, thx @KJ-Cox</VersionDescription>
+    <VersionDescription>Moving Pictures time, weather and movies icon disappear on details, thx @KJ-Cox</VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
     <OnlineLocation>https://github.com/andrewjswan/mediaportal-titan-mepo-theme/releases/download/v[Version]/MePoTheme.Titan-[Version].mpe1</OnlineLocation>
-    <ReleaseDate>2024-04-06T20:20:20</ReleaseDate>
+    <ReleaseDate>2024-04-07T20:20:20</ReleaseDate>
     <Tags>ajs, titan, theme, mepo</Tags>
     <PlatformCompatibility>AnyCPU</PlatformCompatibility>
     <Location>..\build\MePoTheme.Titan-[Version].mpe1</Location>
@@ -3794,6 +3804,13 @@ bugfixes and more.</ExtensionDescription>
         <LocalFileName>..\Common\movingpictures.mediainfo.xml</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{9788e6da-7697-4ba7-bdd1-3faeefcb143b}-movingpictures.mediainfo.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Themes\MePo\movingpictures.mediainfo.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\movingpictures.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{b886b481-7510-4293-a16f-5a1f06878da6}-movingpictures.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\movingpictures.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
         <Param1 />
