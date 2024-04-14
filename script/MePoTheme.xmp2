@@ -3484,10 +3484,13 @@ Clear/CD Art etc. support for Titan,
 Weather icon on screen, 
 
 bugfixes and more.</ExtensionDescription>
-    <VersionDescription>Moving Pictures time, weather and movies icon disappear on details, thx @KJ-Cox</VersionDescription>
+    <VersionDescription>Updated MovingPictures and MyFilms to use FanartHandler property paths
+- ClearArt
+- ClearLogo
+- CDArt</VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
     <OnlineLocation>https://github.com/andrewjswan/mediaportal-titan-mepo-theme/releases/download/v[Version]/MePoTheme.Titan-[Version].mpe1</OnlineLocation>
-    <ReleaseDate>2024-04-07T20:20:20</ReleaseDate>
+    <ReleaseDate>2024-04-15T20:20:20</ReleaseDate>
     <Tags>ajs, titan, theme, mepo</Tags>
     <PlatformCompatibility>AnyCPU</PlatformCompatibility>
     <Location>..\build\MePoTheme.Titan-[Version].mpe1</Location>
