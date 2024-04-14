@@ -1843,7 +1843,7 @@
    		<posY>150</posY>
    		<width>250</width>
    		<height>140</height>
-		<texture>..\..\..\Thumbs\ClearArt\Movies\#(string.trim(#myfilms.db.imdb_id.value)).png</texture>
+		<texture>#fanarthandler.movie.clearart.selected</texture>
 		<visible>!Control.HasFocus(10099)</visible>
 		<animation effect="fade" time="250">Visible</animation>
         <animation effect="fade" time="250">WindowOpen</animation>
@@ -1859,7 +1859,7 @@
 		<posY>330</posY>
         <width>300</width>
         <height>300</height>
-		<texture>..\..\..\Thumbs\CDArt\Movies\#(string.trim(#myfilms.db.imdb_id.value)).png</texture>
+		<texture>#fanarthandler.movie.cd.selected</texture>
         <keepaspectratio>yes</keepaspectratio>
 		<visible>!Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003) + !Control.HasFocus(10099)</visible>
       	<animation effect="fade" time="250" start= "100" end= "50" condition="true">conditional</animation>
@@ -1877,7 +1877,7 @@
 		<posY>780</posY>
         <width>400</width>
         <height>155</height>
-		<texture>..\..\..\Thumbs\ClearLogo\Movies\#(string.trim(#myfilms.db.imdb_id.value)).png</texture>
+		<texture>#fanarthandler.movie.clearlogo.selected</texture>
         <keepaspectratio>yes</keepaspectratio>
 		<visible>!Control.HasFocus(20004)+!Control.HasFocus(10099)</visible>
       	<animation effect="fade" time="250" start= "100" end= "60" condition="true">conditional</animation>
@@ -1895,7 +1895,7 @@
 		<posY>780</posY>
         <width>400</width>
         <height>155</height>
-		<texture>..\..\..\Thumbs\ClearLogo\Movies\#(string.trim(#myfilms.db.imdb_id.value)).png</texture>
+		<texture>#fanarthandler.movie.clearlogo.selected</texture>
         <keepaspectratio>yes</keepaspectratio>
 		<visible>Control.HasFocus(20004)+!Control.HasFocus(10099)</visible>
       	<animation effect="fade" time="250" start= "100" end= "60" condition="true">conditional</animation>

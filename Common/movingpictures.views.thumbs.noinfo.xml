@@ -25,7 +25,7 @@
    		<posY>150</posY>
    		<width>250</width>
    		<height>140</height>
-		<texture>..\..\..\Thumbs\ClearArt\Movies\#(string.trim(#MovingPictures.SelectedMovie.imdb_id)).png</texture>
+		<texture>#fanarthandler.movie.clearart.selected</texture>
 		<visible>![facadeview.filmstrip|facadeview.coverflow]+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="500">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -39,7 +39,7 @@
    		<posY>440</posY>
    		<width>250</width>
    		<height>140</height>
-		<texture>..\..\..\Thumbs\ClearArt\Movies\#(string.trim(#MovingPictures.SelectedMovie.imdb_id)).png</texture>
+		<texture>#fanarthandler.movie.clearart.selected</texture>
    		<visible>[facadeview.filmstrip|facadeview.coverflow]+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="500">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -54,7 +54,7 @@
    		<posY>150</posY>
    		<width>250</width>
    		<height>140</height>
-		<texture>..\..\..\Thumbs\ClearLogo\Movies\#(string.trim(#MovingPictures.SelectedMovie.imdb_id)).png</texture>
+		<texture>#fanarthandler.movie.clearlogo.selected</texture>
 		<visible>![facadeview.filmstrip|facadeview.coverflow]+Control.IsVisible(50)+!control.hasthumb(159357)</visible>
 		<animation effect="fade" time="500">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -68,7 +68,7 @@
    		<posY>440</posY>
    		<width>250</width>
    		<height>140</height>
-		<texture>..\..\..\Thumbs\ClearLogo\Movies\#(string.trim(#MovingPictures.SelectedMovie.imdb_id)).png</texture>
+		<texture>#fanarthandler.movie.clearlogo.selected</texture>
 		<visible>[facadeview.filmstrip|facadeview.coverflow]+Control.IsVisible(50)+!control.hasthumb(159358)</visible>
 		<animation effect="fade" time="500">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
