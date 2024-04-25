@@ -154,7 +154,7 @@
       <width>275</width>
       <height>140</height>
       <keepaspectratio>yes</keepaspectratio>
-      <texture>..\..\..\Thumbs\ClearArt\Series\#(string.trim(#Trakt.Show.TvdbId)).png</texture>
+      <texture>#fanarthandler.series.clearart.selected</texture>
       <visible>control.hasfocus(98301)+control.hasthumb(101)</visible>
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
@@ -186,7 +186,7 @@
       <width>275</width>
       <height>140</height>
       <keepaspectratio>yes</keepaspectratio>
-      <texture>..\..\..\Thumbs\ClearArt\Series\#(string.trim(#Trakt.Show.TvdbId)).png</texture>
+      <texture>#fanarthandler.series.clearart.selected</texture>
       <visible>control.hasfocus(98300)+control.hasthumb(300)</visible>
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
