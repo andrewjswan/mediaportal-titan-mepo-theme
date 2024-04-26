@@ -483,7 +483,7 @@
    		<posY>800</posY>
    		<width>250</width>
    		<height>140</height>
-		<texture>#fanarthandler.series.clearart.selected</texture>
+		<texture>#fanarthandler.tvseries.clearart.selected</texture>
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
    	</control>  
@@ -498,7 +498,7 @@
    		<width>250</width>
    		<height>140</height>
     	<visible>!control.hasthumb(159357)</visible>
-		<texture>#fanarthandler.series.clearlogo.selected</texture>
+		<texture>#fanarthandler.tvseries.clearlogo.selected</texture>
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
    	</control>  
