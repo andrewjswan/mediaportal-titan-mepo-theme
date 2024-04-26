@@ -297,6 +297,83 @@
               <ZipFileName>Installer{CopyFile}\{b886b481-7510-4293-a16f-5a1f06878da6}-movingpictures.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Themes\MePo\movingpictures.xml</DestinationFilename>
             </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\Trakt.Anticipated.Movies.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{d701466b-54c5-444d-812a-5a199ec4e57c}-Trakt.Anticipated.Movies.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Anticipated.Movies.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\Trakt.Anticipated.Shows.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{bf14c4e9-441a-4799-8a3b-1ee2081a0e51}-Trakt.Anticipated.Shows.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Anticipated.Shows.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\Trakt.BoxOffice.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{a6fc3293-185e-4e2a-88e5-3bf5aad65c1f}-Trakt.BoxOffice.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.BoxOffice.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\Trakt.Calendar.Movies.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{530d1b89-8f29-460e-83ca-16ac561b380b}-Trakt.Calendar.Movies.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Calendar.Movies.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\Trakt.Popular.Movies.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{96e3ce46-6cd9-41e8-baf6-95faa5c99483}-Trakt.Popular.Movies.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Popular.Movies.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\Trakt.Popular.Shows.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{b6cc6695-d7c1-49c2-bd35-8af6593a015c}-Trakt.Popular.Shows.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Popular.Shows.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\Trakt.Recommendations.Movies.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{50a7956f-7743-4cf0-9684-fe3bed7e8c02}-Trakt.Recommendations.Movies.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Recommendations.Movies.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\Trakt.Recommendations.Shows.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{d18dca21-53a5-45ea-b1a5-6f8bab828b60}-Trakt.Recommendations.Shows.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Recommendations.Shows.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\Trakt.Season.Episodes.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{fddddb70-aa5a-45f5-b0a8-f84cc71e7cd6}-Trakt.Season.Episodes.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Season.Episodes.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\Trakt.Trending.Movies.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{0cb3f964-4713-48dd-b66a-d741e727a0c4}-Trakt.Trending.Movies.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Trending.Movies.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\Trakt.Trending.Shows.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{adba419e-93ce-4ded-80c3-04a86f53df07}-Trakt.Trending.Shows.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Trending.Shows.xml</DestinationFilename>
+            </FileItem>
           </Items>
         </Files>
       </GroupItem>
@@ -3484,13 +3561,15 @@ Clear/CD Art etc. support for Titan,
 Weather icon on screen, 
 
 bugfixes and more.</ExtensionDescription>
-    <VersionDescription>Updated MovingPictures and MyFilms to use FanartHandler property paths
-- ClearArt
-- ClearLogo
-- CDArt</VersionDescription>
+    <VersionDescription>Update for Trakt to allow FanartHandler paths
+Updated TVSeries FanartHandler paths for ClearArt
+Added TV Series pages to change the icon in Trakt
+Added Movies pages to change the icon in Trakt
+
+</VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
     <OnlineLocation>https://github.com/andrewjswan/mediaportal-titan-mepo-theme/releases/download/v[Version]/MePoTheme.Titan-[Version].mpe1</OnlineLocation>
-    <ReleaseDate>2024-04-15T20:20:20</ReleaseDate>
+    <ReleaseDate>2024-04-26T20:20:20</ReleaseDate>
     <Tags>ajs, titan, theme, mepo</Tags>
     <PlatformCompatibility>AnyCPU</PlatformCompatibility>
     <Location>..\build\MePoTheme.Titan-[Version].mpe1</Location>
@@ -3814,6 +3893,83 @@ bugfixes and more.</ExtensionDescription>
         <LocalFileName>..\Common\movingpictures.xml</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{b886b481-7510-4293-a16f-5a1f06878da6}-movingpictures.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Themes\MePo\movingpictures.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\Trakt.Anticipated.Movies.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{d701466b-54c5-444d-812a-5a199ec4e57c}-Trakt.Anticipated.Movies.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Anticipated.Movies.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\Trakt.Anticipated.Shows.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{bf14c4e9-441a-4799-8a3b-1ee2081a0e51}-Trakt.Anticipated.Shows.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Anticipated.Shows.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\Trakt.BoxOffice.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{a6fc3293-185e-4e2a-88e5-3bf5aad65c1f}-Trakt.BoxOffice.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.BoxOffice.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\Trakt.Calendar.Movies.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{530d1b89-8f29-460e-83ca-16ac561b380b}-Trakt.Calendar.Movies.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Calendar.Movies.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\Trakt.Popular.Movies.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{96e3ce46-6cd9-41e8-baf6-95faa5c99483}-Trakt.Popular.Movies.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Popular.Movies.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\Trakt.Popular.Shows.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{b6cc6695-d7c1-49c2-bd35-8af6593a015c}-Trakt.Popular.Shows.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Popular.Shows.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\Trakt.Recommendations.Movies.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{50a7956f-7743-4cf0-9684-fe3bed7e8c02}-Trakt.Recommendations.Movies.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Recommendations.Movies.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\Trakt.Recommendations.Shows.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{d18dca21-53a5-45ea-b1a5-6f8bab828b60}-Trakt.Recommendations.Shows.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Recommendations.Shows.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\Trakt.Season.Episodes.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{fddddb70-aa5a-45f5-b0a8-f84cc71e7cd6}-Trakt.Season.Episodes.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Season.Episodes.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\Trakt.Trending.Movies.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{0cb3f964-4713-48dd-b66a-d741e727a0c4}-Trakt.Trending.Movies.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Trending.Movies.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\Trakt.Trending.Shows.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{adba419e-93ce-4ded-80c3-04a86f53df07}-Trakt.Trending.Shows.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Trending.Shows.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
         <Param1 />
