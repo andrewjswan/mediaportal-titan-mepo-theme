@@ -5,7 +5,7 @@
 	<allowoverlay>yes</allowoverlay>
   <define>#header.label:#TVSeries.Translation.Artwork.Label</define>
 	<controls>
-    
+
     <control>
       <description>DEFAULT BACKGROUND</description>
       <type>image</type>
@@ -152,7 +152,7 @@
    		<posY>150</posY>
    		<width>250</width>
    		<height>140</height>
-   		<texture>..\..\..\Thumbs\ClearArt\Series\#(string.trim(#TVSeries.Series.ID)).png</texture>
+   		<texture>#fanarthandler.tvseries.clearart.selected</texture>
    		<visible>![facadeview.filmstrip|facadeview.coverflow]</visible>
 		<animation effect="fade" time="500">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -167,7 +167,7 @@
    		<width>250</width>
    		<height>140</height>
    		<visible>[facadeview.filmstrip|facadeview.coverflow]</visible>
-		<texture>..\..\..\Thumbs\ClearArt\Series\#(string.trim(#TVSeries.Series.ID)).png</texture>
+		<texture>#fanarthandler.tvseries.clearart.selected</texture>
 		<animation effect="fade" time="500">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
    	</control>  
@@ -181,7 +181,7 @@
    		<posY>150</posY>
    		<width>250</width>
    		<height>140</height>
-   		<texture>..\..\..\Thumbs\ClearLogo\Series\#(string.trim(#TVSeries.Series.ID)).png</texture>
+   		<texture>#fanarthandler.tvseries.clearlogo.selected</texture>
    		<visible>![facadeview.filmstrip|facadeview.coverflow|control.hasthumb(159357)]</visible>
 		<animation effect="fade" time="500">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -195,7 +195,7 @@
    		<posY>440</posY>
    		<width>250</width>
    		<height>140</height>
-   		<texture>..\..\..\Thumbs\ClearLogo\Series\#(string.trim(#TVSeries.Series.ID)).png</texture>
+   		<texture>#fanarthandler.tvseries.clearlogo.selected</texture>
    		<visible>[facadeview.filmstrip|facadeview.coverflow]+!control.hasthumb(159358)</visible>
 		<animation effect="fade" time="500">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
