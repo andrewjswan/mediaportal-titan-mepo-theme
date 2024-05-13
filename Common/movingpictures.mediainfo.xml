@@ -62,7 +62,7 @@
   	<description>Aspect ratio</description>
     <type>image</type>
     <id>0</id>
-		<posX>975</posX>
+		<posX>995</posX>
 		<posY>890</posY>
     <width>92</width>
     <height>60</height>
@@ -146,7 +146,7 @@
   	<description>Aspect ratio</description>
     <type>image</type>
     <id>0</id>
-   	<posX>526</posX>
+   	<posX>546</posX>
     <posY>880</posY>
     <width>92</width>
     <height>60</height>
