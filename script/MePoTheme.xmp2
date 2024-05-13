@@ -374,6 +374,55 @@
               <ZipFileName>Installer{CopyFile}\{adba419e-93ce-4ded-80c3-04a86f53df07}-Trakt.Trending.Shows.xml</ZipFileName>
               <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Trending.Shows.xml</DestinationFilename>
             </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\common.overlay.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{bc090d43-615a-4296-9eed-844df9fe2ee9}-common.overlay.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\common.overlay.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\dialogGeneralRating.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{e2d0725b-416e-4b47-9357-41f3f101207a}-dialogGeneralRating.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\dialogGeneralRating.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\DialogPinCode.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{b40463f6-8a17-4ea1-b975-99d186b27eb7}-DialogPinCode.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\DialogPinCode.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\DialogVideoInfo.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{154e313c-5f65-42b8-833b-eb902f6bd945}-DialogVideoInfo.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\DialogVideoInfo.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\myvideo.mediainfo.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{c95f22fb-3048-4dd7-bab3-1a20a094c876}-myvideo.mediainfo.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\myvideo.mediainfo.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\videoFullScreen.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{2cc93f2e-e79e-44ba-b276-520147cfbefd}-videoFullScreen.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\videoFullScreen.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\Common\videoOSD.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{12f84f9b-a86c-4fac-b27e-b15c3e69d6ae}-videoOSD.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Titan\Themes\MePo\videoOSD.xml</DestinationFilename>
+            </FileItem>
           </Items>
         </Files>
       </GroupItem>
@@ -3561,15 +3610,14 @@ Clear/CD Art etc. support for Titan,
 Weather icon on screen, 
 
 bugfixes and more.</ExtensionDescription>
-    <VersionDescription>Update for Trakt to allow FanartHandler paths
-Updated TVSeries FanartHandler paths for ClearArt
-Added TV Series pages to change the icon in Trakt
-Added Movies pages to change the icon in Trakt
+    <VersionDescription>Updated ClearArt paths and Aspect Ration logo Xpos for resized logos
+
+
 
 </VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
     <OnlineLocation>https://github.com/andrewjswan/mediaportal-titan-mepo-theme/releases/download/v[Version]/MePoTheme.Titan-[Version].mpe1</OnlineLocation>
-    <ReleaseDate>2024-04-26T20:20:20</ReleaseDate>
+    <ReleaseDate>2024-05-13T20:20:20</ReleaseDate>
     <Tags>ajs, titan, theme, mepo</Tags>
     <PlatformCompatibility>AnyCPU</PlatformCompatibility>
     <Location>..\build\MePoTheme.Titan-[Version].mpe1</Location>
@@ -3970,6 +4018,55 @@ Added Movies pages to change the icon in Trakt
         <LocalFileName>..\Common\Trakt.Trending.Shows.xml</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{adba419e-93ce-4ded-80c3-04a86f53df07}-Trakt.Trending.Shows.xml</ZipFileName>
         <DestinationFilename>%Skin%\Titan\Themes\MePo\Trakt.Trending.Shows.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\common.overlay.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{bc090d43-615a-4296-9eed-844df9fe2ee9}-common.overlay.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\common.overlay.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\dialogGeneralRating.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{e2d0725b-416e-4b47-9357-41f3f101207a}-dialogGeneralRating.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\dialogGeneralRating.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\DialogPinCode.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{b40463f6-8a17-4ea1-b975-99d186b27eb7}-DialogPinCode.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\DialogPinCode.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\DialogVideoInfo.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{154e313c-5f65-42b8-833b-eb902f6bd945}-DialogVideoInfo.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\DialogVideoInfo.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\myvideo.mediainfo.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{c95f22fb-3048-4dd7-bab3-1a20a094c876}-myvideo.mediainfo.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\myvideo.mediainfo.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\videoFullScreen.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{2cc93f2e-e79e-44ba-b276-520147cfbefd}-videoFullScreen.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\videoFullScreen.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\Common\videoOSD.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{12f84f9b-a86c-4fac-b27e-b15c3e69d6ae}-videoOSD.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Titan\Themes\MePo\videoOSD.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false" Condition="None">
         <Param1 />
