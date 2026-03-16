@@ -134,7 +134,7 @@ jobs:
           add: '${{ github.workspace }}/script/MePoTheme.xml'
 
       - name: Delete XML Artifact
-        uses: geekyeggo/delete-artifact@v5
+        uses: geekyeggo/delete-artifact@v6
         with:
             name: MePo Theme - XML
             failOnError: false
@@ -174,13 +174,13 @@ jobs:
             release-files/*.mpe1
 
       - name: Delete MPE1 Artifact
-        uses: geekyeggo/delete-artifact@v5
+        uses: geekyeggo/delete-artifact@v6
         with:
           name: MePo Theme - MPE1
           failOnError: false
 
       - name: Delete Version Description Artifact
-        uses: geekyeggo/delete-artifact@v5
+        uses: geekyeggo/delete-artifact@v6
         with:
           name: MePo Theme - Version Description
           failOnError: false
